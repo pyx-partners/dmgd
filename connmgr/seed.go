@@ -11,8 +11,8 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/bitgo/prova/chaincfg"
-	"github.com/bitgo/prova/wire"
+	"github.com/opacey/dmgd/chaincfg"
+	"github.com/opacey/dmgd/wire"
 )
 
 const (

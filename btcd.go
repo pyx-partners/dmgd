@@ -1,5 +1,6 @@
 // Copyright (c) 2013-2016 The btcsuite developers
 // Copyright (c) 2017 BitGo
+// Copyright (c) 2019 Tranquility Node Ltd
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
@@ -15,8 +16,8 @@ import (
 	"runtime/debug"
 	"runtime/pprof"
 
-	"github.com/bitgo/prova/blockchain/indexers"
-	"github.com/bitgo/prova/limits"
+	"github.com/opacey/dmgd/blockchain/indexers"
+	"github.com/opacey/dmgd/limits"
 )
 
 var (

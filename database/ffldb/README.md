@@ -35,16 +35,16 @@ if err != nil {
 
 ## Documentation
 
-[![GoDoc](https://godoc.org/github.com/bitgo/prova/database/ffldb?status.png)]
-(http://godoc.org/github.com/bitgo/prova/database/ffldb)
+[![GoDoc](https://godoc.org/github.com/opacey/dmgd/database/ffldb?status.png)]
+(http://godoc.org/github.com/opacey/dmgd/database/ffldb)
 
 Full `go doc` style documentation for the project can be viewed online without
 installing this package by using the GoDoc site here:
-http://godoc.org/github.com/bitgo/prova/database/ffldb
+http://godoc.org/github.com/opacey/dmgd/database/ffldb
 
 You can also view the documentation locally once the package is installed with
 the `godoc` tool by running `godoc -http=":6060"` and pointing your browser to
-http://localhost:6060/pkg/github.com/bitgo/prova/database/ffldb
+http://localhost:6060/pkg/github.com/opacey/dmgd/database/ffldb
 
 ## License
 

@@ -1,5 +1,6 @@
 // Copyright (c) 2014 The btcsuite developers
 // Copyright (c) 2017 BitGo
+// Copyright (c) 2019 Tranquility Node Ltd
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
@@ -16,8 +17,8 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/bitgo/prova/chaincfg"
-	"github.com/bitgo/prova/provautil/hdkeychain"
+	"github.com/opacey/dmgd/chaincfg"
+	"github.com/opacey/dmgd/provautil/hdkeychain"
 )
 
 // TestBIP0032Vectors tests the vectors provided by [BIP32] to ensure the

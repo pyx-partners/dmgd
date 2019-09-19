@@ -1,5 +1,6 @@
 // Copyright (c) 2013-2016 The btcsuite developers
 // Copyright (c) 2017 BitGo
+// Copyright (c) 2019 Tranquility Node Ltd
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
@@ -10,8 +11,8 @@ import (
 	"runtime"
 	"testing"
 
-	"github.com/bitgo/prova/blockchain"
-	"github.com/bitgo/prova/txscript"
+	"github.com/opacey/dmgd/blockchain"
+	"github.com/opacey/dmgd/txscript"
 )
 
 // TestCheckBlockScripts ensures that validating the all of the scripts in a

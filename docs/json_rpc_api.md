@@ -1113,7 +1113,7 @@ package main
 
 import (
 	"github.com/btcsuite/btcrpcclient"
-	"github.com/bitgo/prova/provautil"
+	"github.com/opacey/dmgd/provautil"
 	"io/ioutil"
 	"log"
 	"path/filepath"
@@ -1173,9 +1173,9 @@ package main
 
 import (
 	"github.com/btcsuite/btcrpcclient"
-	"github.com/bitgo/prova/provautil"
-	"github.com/bitgo/prova/chaincfg/chainhash"
-	"github.com/bitgo/prova/wire"
+	"github.com/opacey/dmgd/provautil"
+	"github.com/opacey/dmgd/chaincfg/chainhash"
+	"github.com/opacey/dmgd/wire"
 	"io/ioutil"
 	"log"
 	"path/filepath"
@@ -1264,9 +1264,9 @@ package main
 
 import (
 	"github.com/btcsuite/btcrpcclient"
-	"github.com/bitgo/prova/provautil"
-	"github.com/bitgo/prova/chaincfg/chainhash"
-	"github.com/bitgo/prova/wire"
+	"github.com/opacey/dmgd/provautil"
+	"github.com/opacey/dmgd/chaincfg/chainhash"
+	"github.com/opacey/dmgd/wire"
 	"io/ioutil"
 	"log"
 	"path/filepath"

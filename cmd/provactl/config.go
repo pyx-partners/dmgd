@@ -1,5 +1,6 @@
 // Copyright (c) 2013-2015 The btcsuite developers
 // Copyright (c) 2017 BitGo
+// Copyright (c) 2019 Tranquility Node Ltd
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
@@ -15,8 +16,8 @@ import (
 	"strings"
 	"syscall"
 
-	"github.com/bitgo/prova/btcjson"
-	"github.com/bitgo/prova/provautil"
+	"github.com/opacey/dmgd/btcjson"
+	"github.com/opacey/dmgd/provautil"
 	flags "github.com/btcsuite/go-flags"
 	"golang.org/x/crypto/ssh/terminal"
 )

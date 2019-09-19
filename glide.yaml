@@ -1,4 +1,4 @@
-package: github.com/bitgo/prova
+package: github.com/opacey/dmgd
 import:
 - package: github.com/btcsuite/btclog
 - package: github.com/btcsuite/btcrpcclient

@@ -1,6 +1,7 @@
 // Copyright (c) 2013-2017 The btcsuite developers
 // Copyright (c) 2015-2017 The Decred developers
 // Copyright (c) 2017 BitGo
+// Copyright (c) 2019 Tranquility Node Ltd
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
@@ -21,21 +22,21 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/bitgo/prova/addrmgr"
-	"github.com/bitgo/prova/blockchain"
-	"github.com/bitgo/prova/blockchain/indexers"
-	"github.com/bitgo/prova/chaincfg"
-	"github.com/bitgo/prova/chaincfg/chainhash"
-	"github.com/bitgo/prova/connmgr"
-	"github.com/bitgo/prova/database"
-	"github.com/bitgo/prova/mempool"
-	"github.com/bitgo/prova/mining"
-	"github.com/bitgo/prova/mining/cpuminer"
-	"github.com/bitgo/prova/peer"
-	"github.com/bitgo/prova/provautil"
-	"github.com/bitgo/prova/provautil/bloom"
-	"github.com/bitgo/prova/txscript"
-	"github.com/bitgo/prova/wire"
+	"github.com/opacey/dmgd/addrmgr"
+	"github.com/opacey/dmgd/blockchain"
+	"github.com/opacey/dmgd/blockchain/indexers"
+	"github.com/opacey/dmgd/chaincfg"
+	"github.com/opacey/dmgd/chaincfg/chainhash"
+	"github.com/opacey/dmgd/connmgr"
+	"github.com/opacey/dmgd/database"
+	"github.com/opacey/dmgd/mempool"
+	"github.com/opacey/dmgd/mining"
+	"github.com/opacey/dmgd/mining/cpuminer"
+	"github.com/opacey/dmgd/peer"
+	"github.com/opacey/dmgd/provautil"
+	"github.com/opacey/dmgd/provautil/bloom"
+	"github.com/opacey/dmgd/txscript"
+	"github.com/opacey/dmgd/wire"
 )
 
 const (

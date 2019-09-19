@@ -1,5 +1,6 @@
 // Copyright (c) 2013-2015 The btcsuite developers
 // Copyright (c) 2017 BitGo
+// Copyright (c) 2019 Tranquility Node Ltd
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
@@ -11,7 +12,7 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/bitgo/prova/wire"
+	"github.com/opacey/dmgd/wire"
 )
 
 // mruInventoryMap provides a concurrency safe map that is limited to a maximum

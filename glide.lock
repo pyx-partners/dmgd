@@ -1,16 +1,13 @@
-hash: 4703944b89b38a91e9522ca678b49285ed2e460e63ed1af5ade337a1acdab23c
-updated: 2017-04-06T21:15:05.949504706-07:00
+hash: 02dbbe6ce883aedac8e27df6255e0df878cb21bed6331ce2cd4fe9b70336944d
+updated: 2019-09-19T14:40:22.329402+01:00
 imports:
 - name: github.com/btcsuite/btcd
   version: f6ad7eb2c963151c71de2bd37d04d9af644a891d
   subpackages:
-  - blockchain
   - btcec
   - btcjson
   - chaincfg
   - chaincfg/chainhash
-  - database
-  - txscript
   - wire
 - name: github.com/btcsuite/btclog
   version: 73889fb79bd687870312b6e40effcecffbd57d30
@@ -69,4 +66,9 @@ imports:
   version: 41d678d1df78cd0410143162dff954e6dc09300f
   subpackages:
   - sha3
+  - ssh/terminal
+- name: golang.org/x/sys
+  version: b4ddaad3f8a36719f2b8bc6486c14cc468ca2bb5
+  subpackages:
+  - unix
 testImports: []

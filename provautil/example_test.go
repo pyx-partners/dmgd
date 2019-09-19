@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"math"
 
-	"github.com/bitgo/prova/provautil"
+	"github.com/opacey/dmgd/provautil"
 )
 
 func ExampleAmount() {

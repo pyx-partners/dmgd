@@ -1,5 +1,6 @@
 // Copyright (c) 2015-2016 The btcsuite developers
 // Copyright (c) 2017 BitGo
+// Copyright (c) 2019 Tranquility Node Ltd
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
@@ -13,10 +14,10 @@ import (
 	"runtime"
 	"testing"
 
-	"github.com/bitgo/prova/chaincfg"
-	"github.com/bitgo/prova/database"
-	"github.com/bitgo/prova/database/ffldb"
-	"github.com/bitgo/prova/provautil"
+	"github.com/opacey/dmgd/chaincfg"
+	"github.com/opacey/dmgd/database"
+	"github.com/opacey/dmgd/database/ffldb"
+	"github.com/opacey/dmgd/provautil"
 )
 
 // dbType is the database type name for this driver.

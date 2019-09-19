@@ -1,5 +1,6 @@
 // Copyright (c) 2013-2016 The btcsuite developers
 // Copyright (c) 2017 BitGo
+// Copyright (c) 2019 Tranquility Node Ltd
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
@@ -11,8 +12,8 @@ import (
 	"io"
 	"time"
 	// "log"
-	"github.com/bitgo/prova/btcec"
-	"github.com/bitgo/prova/chaincfg/chainhash"
+	"github.com/opacey/dmgd/btcec"
+	"github.com/opacey/dmgd/chaincfg/chainhash"
 )
 
 // BlockValidatingPubKeySize is the number of bytes for a compressed pubkey.

@@ -1,5 +1,6 @@
 // Copyright (c) 2013-2015 The btcsuite developers
 // Copyright (c) 2017 BitGo
+// Copyright (c) 2019 Tranquility Node Ltd
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
@@ -12,7 +13,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/bitgo/prova/provautil"
+	"github.com/opacey/dmgd/provautil"
 	//"github.com/davecgh/go-spew/spew"
 )
 

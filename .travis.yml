@@ -10,10 +10,10 @@ script:
   - export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
   
 install:
-  - git clone https://github.com/bitgo/prova $GOPATH/src/github.com/bitgo/prova
-  - cd $GOPATH/src/github.com/bitgo/prova
+  - git clone https://github.com/opacey/dmgd $GOPATH/src/github.com/opacey/dmgd
+  - cd $GOPATH/src/github.com/opacey/dmgd
   - go get -u github.com/Masterminds/glide
   - glide install
   - go install . ./cmd/...
-  - cd $GOPATH/src/github.com/bitgo/prova/blockchain
+  - cd $GOPATH/src/github.com/opacey/dmgd/blockchain
   - go test -v

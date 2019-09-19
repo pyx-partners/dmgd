@@ -1,5 +1,6 @@
 // Copyright (c) 2015-2016 The btcsuite developers
 // Copyright (c) 2017 BitGo
+// Copyright (c) 2019 Tranquility Node Ltd
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
@@ -11,11 +12,11 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/bitgo/prova/chaincfg"
-	"github.com/bitgo/prova/database"
-	_ "github.com/bitgo/prova/database/ffldb"
-	"github.com/bitgo/prova/provautil"
-	"github.com/bitgo/prova/wire"
+	"github.com/opacey/dmgd/chaincfg"
+	"github.com/opacey/dmgd/database"
+	_ "github.com/opacey/dmgd/database/ffldb"
+	"github.com/opacey/dmgd/provautil"
+	"github.com/opacey/dmgd/wire"
 )
 
 // This example demonstrates creating a new database.
@@ -23,8 +24,8 @@ func ExampleCreate() {
 	// This example assumes the ffldb driver is imported.
 	//
 	// import (
-	// 	"github.com/bitgo/prova/database"
-	// 	_ "github.com/bitgo/prova/database/ffldb"
+	// 	"github.com/opacey/dmgd/database"
+	// 	_ "github.com/opacey/dmgd/database/ffldb"
 	// )
 
 	// Create a database and schedule it to be closed and removed on exit.
@@ -49,8 +50,8 @@ func Example_basicUsage() {
 	// This example assumes the ffldb driver is imported.
 	//
 	// import (
-	// 	"github.com/bitgo/prova/database"
-	// 	_ "github.com/bitgo/prova/database/ffldb"
+	// 	"github.com/opacey/dmgd/database"
+	// 	_ "github.com/opacey/dmgd/database/ffldb"
 	// )
 
 	// Create a database and schedule it to be closed and removed on exit.
@@ -115,8 +116,8 @@ func Example_blockStorageAndRetrieval() {
 	// This example assumes the ffldb driver is imported.
 	//
 	// import (
-	// 	"github.com/bitgo/prova/database"
-	// 	_ "github.com/bitgo/prova/database/ffldb"
+	// 	"github.com/opacey/dmgd/database"
+	// 	_ "github.com/opacey/dmgd/database/ffldb"
 	// )
 
 	// Create a database and schedule it to be closed and removed on exit.

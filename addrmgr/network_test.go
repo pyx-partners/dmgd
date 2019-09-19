@@ -1,5 +1,6 @@
 // Copyright (c) 2013-2014 The btcsuite developers
 // Copyright (c) 2017 BitGo
+// Copyright (c) 2019 Tranquility Node Ltd
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
@@ -9,8 +10,8 @@ import (
 	"net"
 	"testing"
 
-	"github.com/bitgo/prova/addrmgr"
-	"github.com/bitgo/prova/wire"
+	"github.com/opacey/dmgd/addrmgr"
+	"github.com/opacey/dmgd/wire"
 )
 
 // TestIPTypes ensures the various functions which determine the type of an IP

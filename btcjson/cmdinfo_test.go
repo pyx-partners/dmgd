@@ -1,5 +1,6 @@
 // Copyright (c) 2015 The btcsuite developers
 // Copyright (c) 2017 BitGo
+// Copyright (c) 2019 Tranquility Node Ltd
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
@@ -9,7 +10,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/bitgo/prova/btcjson"
+	"github.com/opacey/dmgd/btcjson"
 )
 
 // TestCmdMethod tests the CmdMethod function to ensure it retunrs the expected

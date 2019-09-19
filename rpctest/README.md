@@ -5,7 +5,7 @@ rpctest
 (https://travis-ci.org/bitgo/prova) [![ISC License]
 (http://img.shields.io/badge/license-ISC-blue.svg)](http://copyfree.org)
 [![GoDoc](https://img.shields.io/badge/godoc-reference-blue.svg)]
-(http://godoc.org/github.com/bitgo/prova/rpctest)
+(http://godoc.org/github.com/opacey/dmgd/rpctest)
 
 Package rpctest provides a btcd-specific RPC testing harness crafting and
 executing integration tests by driving a `btcd` instance via the `RPC`
@@ -22,7 +22,7 @@ systems/integration tests.
 ## Installation and Updating
 
 ```bash
-$ go get -u github.com/bitgo/prova/rpctest
+$ go get -u github.com/opacey/dmgd/rpctest
 ```
 
 ## License

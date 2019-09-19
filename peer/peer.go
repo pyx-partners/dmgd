@@ -1,5 +1,6 @@
 // Copyright (c) 2013-2016 The btcsuite developers
 // Copyright (c) 2017 BitGo
+// Copyright (c) 2019 Tranquility Node Ltd
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
@@ -18,10 +19,10 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/bitgo/prova/blockchain"
-	"github.com/bitgo/prova/chaincfg"
-	"github.com/bitgo/prova/chaincfg/chainhash"
-	"github.com/bitgo/prova/wire"
+	"github.com/opacey/dmgd/blockchain"
+	"github.com/opacey/dmgd/chaincfg"
+	"github.com/opacey/dmgd/chaincfg/chainhash"
+	"github.com/opacey/dmgd/wire"
 	"github.com/btcsuite/go-socks/socks"
 	"github.com/davecgh/go-spew/spew"
 )

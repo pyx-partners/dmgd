@@ -7,7 +7,7 @@ provautil
 (https://coveralls.io/r/bitgo/prova/provautil?branch=master) [![ISC License]
 (http://img.shields.io/badge/license-ISC-blue.svg)](http://copyfree.org)
 [![GoDoc](http://img.shields.io/badge/godoc-reference-blue.svg)]
-(http://godoc.org/github.com/bitgo/prova/provautil)
+(http://godoc.org/github.com/opacey/dmgd/provautil)
 
 Package provautil provides bitcoin-specific convenience functions and types.
 A comprehensive suite of tests is provided to ensure proper functionality.  See
@@ -18,7 +18,7 @@ report.
 ## Installation and Updating
 
 ```bash
-$ go get -u github.com/bitgo/prova/provautil
+$ go get -u github.com/opacey/dmgd/provautil
 ```
 
 ## GPG Verification Key

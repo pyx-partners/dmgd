@@ -4,7 +4,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/bitgo/prova/provautil"
+	"github.com/opacey/dmgd/provautil"
 	"github.com/btcsuite/btclog"
 )
 

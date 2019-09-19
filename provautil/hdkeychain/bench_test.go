@@ -1,5 +1,6 @@
 // Copyright (c) 2014 The btcsuite developers
 // Copyright (c) 2017 BitGo
+// Copyright (c) 2019 Tranquility Node Ltd
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
@@ -8,7 +9,7 @@ package hdkeychain_test
 import (
 	"testing"
 
-	"github.com/bitgo/prova/provautil/hdkeychain"
+	"github.com/opacey/dmgd/provautil/hdkeychain"
 )
 
 // bip0032MasterPriv1 is the master private extended key from the first set of

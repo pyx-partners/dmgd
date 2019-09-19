@@ -1,13 +1,14 @@
 // Copyright (c) 2015-2016 The btcsuite developers
 // Copyright (c) 2017 BitGo
+// Copyright (c) 2019 Tranquility Node Ltd
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
 package blockchain
 
 import (
-	"github.com/bitgo/prova/btcec"
-	"github.com/bitgo/prova/txscript"
+	"github.com/opacey/dmgd/btcec"
+	"github.com/opacey/dmgd/txscript"
 )
 
 // -----------------------------------------------------------------------------

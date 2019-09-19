@@ -1,5 +1,6 @@
 // Copyright (c) 2013, 2014 The btcsuite developers
 // Copyright (c) 2017 BitGo
+// Copyright (c) 2019 Tranquility Node Ltd
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
@@ -8,7 +9,7 @@ package bloom_test
 import (
 	"testing"
 
-	"github.com/bitgo/prova/provautil/bloom"
+	"github.com/opacey/dmgd/provautil/bloom"
 )
 
 // TestMurmurHash3 ensure the MurmurHash3 function produces the correct hash

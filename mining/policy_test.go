@@ -8,10 +8,10 @@ import (
 	"encoding/hex"
 	"testing"
 
-	"github.com/bitgo/prova/blockchain"
-	"github.com/bitgo/prova/chaincfg/chainhash"
-	"github.com/bitgo/prova/provautil"
-	"github.com/bitgo/prova/wire"
+	"github.com/opacey/dmgd/blockchain"
+	"github.com/opacey/dmgd/chaincfg/chainhash"
+	"github.com/opacey/dmgd/provautil"
+	"github.com/opacey/dmgd/wire"
 )
 
 // newHashFromStr converts the passed big-endian hex string into a

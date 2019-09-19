@@ -1,5 +1,6 @@
 // Copyright (c) 2015-2016 The btcsuite developers
 // Copyright (c) 2017 BitGo
+// Copyright (c) 2019 Tranquility Node Ltd
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
@@ -9,8 +10,8 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/bitgo/prova/database"
-	_ "github.com/bitgo/prova/database/ffldb"
+	"github.com/opacey/dmgd/database"
+	_ "github.com/opacey/dmgd/database/ffldb"
 )
 
 var (

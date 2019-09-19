@@ -1,5 +1,6 @@
 // Copyright (c) 2013-2016 The btcsuite developers
 // Copyright (c) 2017 BitGo
+// Copyright (c) 2019 Tranquility Node Ltd
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
@@ -8,11 +9,11 @@ package blockchain
 import (
 	"fmt"
 
-	"github.com/bitgo/prova/chaincfg"
-	"github.com/bitgo/prova/chaincfg/chainhash"
-	"github.com/bitgo/prova/database"
-	"github.com/bitgo/prova/provautil"
-	"github.com/bitgo/prova/txscript"
+	"github.com/opacey/dmgd/chaincfg"
+	"github.com/opacey/dmgd/chaincfg/chainhash"
+	"github.com/opacey/dmgd/database"
+	"github.com/opacey/dmgd/provautil"
+	"github.com/opacey/dmgd/txscript"
 )
 
 // CheckpointConfirmations is the number of blocks before the end of the current

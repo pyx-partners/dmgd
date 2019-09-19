@@ -1,6 +1,7 @@
 // Copyright (c) 2015-2017 The btcsuite developers
 // Copyright (c) 2015-2017 The Decred developers
 // Copyright (c) 2017 BitGo
+// Copyright (c) 2019 Tranquility Node Ltd
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
@@ -12,7 +13,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/bitgo/prova/btcjson"
+	"github.com/opacey/dmgd/btcjson"
 )
 
 // helpDescsEnUS defines the English descriptions used for the help strings.

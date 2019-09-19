@@ -1,5 +1,6 @@
 // Copyright (c) 2016 The btcsuite developers
 // Copyright (c) 2017 BitGo
+// Copyright (c) 2019 Tranquility Node Ltd
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
@@ -15,8 +16,8 @@ import (
 	"runtime/debug"
 	"testing"
 
-	"github.com/bitgo/prova/chaincfg"
-	"github.com/bitgo/prova/rpctest"
+	"github.com/opacey/dmgd/chaincfg"
+	"github.com/opacey/dmgd/rpctest"
 )
 
 func testGetBestBlock(r *rpctest.Harness, t *testing.T) {
