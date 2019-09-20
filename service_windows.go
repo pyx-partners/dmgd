@@ -18,16 +18,16 @@ import (
 )
 
 const (
-	// svcName is the name of Prova service.
-	svcName = "provasvc"
+	// svcName is the name of dmgd service.
+	svcName = "dmgdsvc"
 
 	// svcDisplayName is the service name that will be shown in the windows
 	// services list.  Not the svcName is the "real" name which is used
 	// to control the service.  This is only for display purposes.
-	svcDisplayName = "Prova Service"
+	svcDisplayName = "Dmgd Service"
 
 	// svcDesc is the description of the service.
-	svcDesc = "Downloads and stays synchronized with the Prova block " +
+	svcDesc = "Downloads and stays synchronized with the dmgd block " +
 		"chain and provides chain services to applications."
 )
 
@@ -35,7 +35,7 @@ const (
 var elog *eventlog.Log
 
 // logServiceStartOfDay logs information to the Windows event log
-// about Prova when the main server has been started.
+// about dmgd when the main server has been started.
 func logServiceStartOfDay(srvr *server) {
 	var message string
 	message += fmt.Sprintf("Version %s\n", version())
@@ -112,7 +112,7 @@ loop:
 	return false, 0
 }
 
-// installService attempts to install the Prova service. Typically this should
+// installService attempts to install the dmgd service. Typically this should
 // be done by the msi installer, but it is provided here since it can be useful
 // for development.
 func installService() error {
@@ -161,7 +161,7 @@ func installService() error {
 	return eventlog.InstallAsEventCreate(svcName, eventsSupported)
 }
 
-// removeService attempts to uninstall the Prova service. Typically this should
+// removeService attempts to uninstall the dmgd service. Typically this should
 // be done by the msi uninstaller, but it is provided here since it can be
 // useful for development. The eventlog entry is intentionally not removed
 // since it would invalidate any existing event log messages.
@@ -184,7 +184,7 @@ func removeService() error {
 	return service.Delete()
 }
 
-// startService attempts to start the Prova service.
+// startService attempts to start the dmgd service.
 func startService() error {
 	// Connect to the windows service manager.
 	serviceManager, err := mgr.Connect()

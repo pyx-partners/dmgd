@@ -756,7 +756,7 @@ func (m *wsNotificationManager) notifyForNewTx(clients map[chan struct{}]*wsClie
 		amount += txOut.Value
 	}
 
-	ntfn := btcjson.NewTxAcceptedNtfn(txHashStr, provautil.Amount(amount).ToRMG())
+	ntfn := btcjson.NewTxAcceptedNtfn(txHashStr, provautil.Amount(amount).ToDMG())
 	marshalledJSON, err := btcjson.MarshalCmd(nil, ntfn)
 	if err != nil {
 		rpcsLog.Errorf("Failed to marshal tx notification: %s", err.Error())

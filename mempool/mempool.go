@@ -141,7 +141,7 @@ type Policy struct {
 	// of the max signature operations for a block.
 	MaxSigOpsPerTx int
 
-	// MinRelayTxFee defines the minimum transaction fee in RMG/kB to be
+	// MinRelayTxFee defines the minimum transaction fee in DMG/kB to be
 	// considered a non-zero fee.
 	MinRelayTxFee provautil.Amount
 }
@@ -1191,7 +1191,7 @@ func (mp *TxPool) RawMempoolVerbose() map[string]*btcjson.GetRawMempoolVerboseRe
 
 		mpd := &btcjson.GetRawMempoolVerboseResult{
 			Size:             int32(tx.MsgTx().SerializeSize()),
-			Fee:              provautil.Amount(desc.Fee).ToRMG(),
+			Fee:              provautil.Amount(desc.Fee).ToDMG(),
 			Time:             desc.Added.Unix(),
 			Height:           int64(desc.Height),
 			StartingPriority: desc.StartingPriority,

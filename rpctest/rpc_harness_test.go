@@ -30,7 +30,7 @@ func testSendOutputs(r *Harness, t *testing.T) {
 			t.Fatalf("unable to get new address: %v", err)
 		}
 
-		// Next, send amt RMG to this address, spending from one of our mature
+		// Next, send amt DMG to this address, spending from one of our mature
 		// coinbase outputs.
 		addrScript, err := txscript.PayToAddrScript(addr)
 		if err != nil {
@@ -405,7 +405,7 @@ func testMemWalletReorg(r *Harness, t *testing.T) {
 	}
 	defer harness.TearDown()
 
-	// The internal wallet of this harness should now have 250 RMG.
+	// The internal wallet of this harness should now have 250 DMG.
 	expectedBalance := provautil.Amount(250 * provautil.AtomsPerGram)
 	walletBalance := harness.ConfirmedBalance()
 	if expectedBalance != walletBalance {
@@ -423,7 +423,7 @@ func testMemWalletReorg(r *Harness, t *testing.T) {
 		t.Fatalf("unable to join node on blocks: %v", err)
 	}
 
-	// The original wallet should now have a balance of 0 RMG as its entire
+	// The original wallet should now have a balance of 0 DMG as its entire
 	// chain should have been decimated in favor of the main harness'
 	// chain.
 	expectedBalance = provautil.Amount(0)
@@ -454,7 +454,7 @@ func testMemWalletLockedOutputs(r *Harness, t *testing.T) {
 		t.Fatalf("unable to create transaction: %v", err)
 	}
 
-	// The current wallet balance should now be at least 50 RMG less
+	// The current wallet balance should now be at least 50 DMG less
 	// (accounting for fees) than the period balance
 	currentBalance := r.ConfirmedBalance()
 	if !(currentBalance <= startingBalance-outputAmt) {
@@ -527,7 +527,7 @@ func TestMain(m *testing.M) {
 }
 
 func TestHarness(t *testing.T) {
-	// We should have (numMatureOutputs * 50 RMG) of mature unspendable
+	// We should have (numMatureOutputs * 50 DMG) of mature unspendable
 	// outputs.
 	expectedBalance := provautil.Amount(numMatureOutputs * 50 * provautil.AtomsPerGram)
 	harnessBalance := mainHarness.ConfirmedBalance()

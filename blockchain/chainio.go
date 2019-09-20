@@ -136,7 +136,7 @@ func isDeserializeErr(err error) bool {
 //  - header code: 0x13 (coinbase, height 9)
 //  - transaction version: 1
 //  - compressed txout 0:
-//    - 0x32: VLQ-encoded compressed amount for 5000000000 (5000 RMG)
+//    - 0x32: VLQ-encoded compressed amount for 5000000000 (5000 DMG)
 //    - 0x05: special script type pay-to-pubkey
 //    - 0x11...5c: x-coordinate of the pubkey
 //
@@ -153,14 +153,14 @@ func isDeserializeErr(err error) bool {
 //    - header code: 0x00 (was not the final unspent output for containing tx)
 //    - transaction version: Nothing since header code is 0
 //    - compressed txout:
-//      - 0x91f20f: VLQ-encoded compressed amount for 34405000000 (34405 RMG)
+//      - 0x91f20f: VLQ-encoded compressed amount for 34405000000 (34405 DMG)
 //      - 0x00: special script type pay-to-pubkey-hash
 //      - 0x6e...86: pubkey hash
 //  - Second to last spent output:
 //    - header code: 0x8b9970 (not coinbase, height 100024)
 //    - transaction version: 1
 //    - compressed txout:
-//      - 0x86c647: VLQ-encoded compressed amount for 13761000000 (13761 RMG)
+//      - 0x86c647: VLQ-encoded compressed amount for 13761000000 (13761 DMG)
 //      - 0x00: special script type pay-to-pubkey-hash
 //      - 0xb2...ec: pubkey hash
 // -----------------------------------------------------------------------------
@@ -510,7 +510,7 @@ func dbRemoveSpendJournalEntry(dbTx database.Tx, blockHash *chainhash.Hash) erro
 //  - header code: 0x03 (coinbase, output zero unspent, 0 bytes of unspentness)
 //  - unspentness: Nothing since it is zero bytes
 //  - compressed txout 0:
-//    - 0x32: VLQ-encoded compressed amount for 5000000000 (5000 RMG)
+//    - 0x32: VLQ-encoded compressed amount for 5000000000 (5000 DMG)
 //    - 0x04: special script type pay-to-pubkey
 //    - 0x96...52: x-coordinate of the pubkey
 //
@@ -530,11 +530,11 @@ func dbRemoveSpendJournalEntry(dbTx database.Tx, blockHash *chainhash.Hash) erro
 //  - unspentness: [0x01] (bit 0 is set, so output 0+2 = 2 is unspent)
 //    NOTE: It's +2 since the first two outputs are encoded in the header code
 //  - compressed txout 0:
-//    - 0x12: VLQ-encoded compressed amount for 20000000 (20 RMG)
+//    - 0x12: VLQ-encoded compressed amount for 20000000 (20 DMG)
 //    - 0x00: special script type pay-to-pubkey-hash
 //    - 0xe2...8a: pubkey hash
 //  - compressed txout 2:
-//    - 0x8009: VLQ-encoded compressed amount for 15000000 (15 RMG)
+//    - 0x8009: VLQ-encoded compressed amount for 15000000 (15 DMG)
 //    - 0x00: special script type pay-to-pubkey-hash
 //    - 0xb8...58: pubkey hash
 //
@@ -555,7 +555,7 @@ func dbRemoveSpendJournalEntry(dbTx database.Tx, blockHash *chainhash.Hash) erro
 //  - unspentness: [0x00 0x00 0x10] (bit 20 is set, so output 20+2 = 22 is unspent)
 //    NOTE: It's +2 since the first two outputs are encoded in the header code
 //  - compressed txout 22:
-//    - 0x8ba5b9e763: VLQ-encoded compressed amount for 366875659 (366.875659 RMG)
+//    - 0x8ba5b9e763: VLQ-encoded compressed amount for 366875659 (366.875659 DMG)
 //    - 0x01: special script type pay-to-script-hash
 //    - 0x1d...e6: script hash
 // -----------------------------------------------------------------------------

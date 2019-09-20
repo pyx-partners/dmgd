@@ -6,5 +6,5 @@ Prova provides a `--upnp` flag which can be used to automatically map the peer-t
 
 |Name|Port|
 |----|----|
-|Default peer-to-peer port|TCP 7979|
+|Default peer-to-peer port|TCP 6464|
 |Default RPC port|TCP 8334|

@@ -159,7 +159,7 @@ func TestIsValidAdminOp(t *testing.T) {
 	// create provision tx out
 	provisionPkScript, _ := ProvaThreadScript(provautil.ProvisionThread)
 	provisionTxOut := wire.TxOut{
-		Value:    0, // 0 RMG
+		Value:    0, // 0 DMG
 		PkScript: provisionPkScript,
 	}
 

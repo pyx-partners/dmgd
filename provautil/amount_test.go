@@ -121,32 +121,32 @@ func TestAmountUnitConversions(t *testing.T) {
 		s         string
 	}{
 		{
-			name:      "MRMG",
+			name:      "MDMG",
 			amount:    MaxAtoms,
-			unit:      AmountMegaRMG,
+			unit:      AmountMegaDMG,
 			converted: 2100,
-			s:         "2100 MRMG",
+			s:         "2100 MDMG",
 		},
 		{
-			name:      "kRMG",
+			name:      "kDMG",
 			amount:    44433322211100,
-			unit:      AmountKiloRMG,
+			unit:      AmountKiloDMG,
 			converted: 44433.322211100,
-			s:         "44433.3222111 kRMG",
+			s:         "44433.3222111 kDMG",
 		},
 		{
-			name:      "RMG",
+			name:      "DMG",
 			amount:    44433322211100,
-			unit:      AmountRMG,
+			unit:      AmountDMG,
 			converted: 44433322.211100,
-			s:         "44433322.2111 RMG",
+			s:         "44433322.2111 DMG",
 		},
 		{
-			name:      "mRMG",
+			name:      "mDMG",
 			amount:    44433322211100,
-			unit:      AmountMilliRMG,
+			unit:      AmountMilliDMG,
 			converted: 44433322211.100,
-			s:         "44433322211.1 mRMG",
+			s:         "44433322211.1 mDMG",
 		},
 		{
 
@@ -162,7 +162,7 @@ func TestAmountUnitConversions(t *testing.T) {
 			amount:    44433322211100,
 			unit:      AmountUnit(-1),
 			converted: 444333222.11100,
-			s:         "444333222.111 1e-1 RMG",
+			s:         "444333222.111 1e-1 DMG",
 		},
 	}
 
@@ -179,15 +179,15 @@ func TestAmountUnitConversions(t *testing.T) {
 			continue
 		}
 
-		// Verify that Amount.ToRMG works as advertised.
-		f1 := test.amount.ToUnit(AmountRMG)
-		f2 := test.amount.ToRMG()
+		// Verify that Amount.ToDMG works as advertised.
+		f1 := test.amount.ToUnit(AmountDMG)
+		f2 := test.amount.ToDMG()
 		if f1 != f2 {
-			t.Errorf("%v: ToRMG does not match ToUnit(AmountRMG): %v != %v", test.name, f1, f2)
+			t.Errorf("%v: ToDMG does not match ToUnit(AmountDMG): %v != %v", test.name, f1, f2)
 		}
 
 		// Verify that Amount.String works as advertised.
-		s1 := test.amount.Format(AmountRMG)
+		s1 := test.amount.Format(AmountDMG)
 		s2 := test.amount.String()
 		if s1 != s2 {
 			t.Errorf("%v: String does not match Format(AmountGrams): %v != %v", test.name, s1, s2)
@@ -203,52 +203,52 @@ func TestAmountMulF64(t *testing.T) {
 		res  Amount
 	}{
 		{
-			name: "Multiply 0.1 RMG by 2",
-			amt:  100e5, // 0.1 RMG
+			name: "Multiply 0.1 DMG by 2",
+			amt:  100e5, // 0.1 DMG
 			mul:  2,
-			res:  200e5, // 0.2 RMG
+			res:  200e5, // 0.2 DMG
 		},
 		{
-			name: "Multiply 0.2 RMG by 0.02",
-			amt:  200e5, // 0.2 RMG
+			name: "Multiply 0.2 DMG by 0.02",
+			amt:  200e5, // 0.2 DMG
 			mul:  1.02,
-			res:  204e5, // 0.204 RMG
+			res:  204e5, // 0.204 DMG
 		},
 		{
-			name: "Multiply 0.1 RMG by -2",
-			amt:  100e5, // 0.1 RMG
+			name: "Multiply 0.1 DMG by -2",
+			amt:  100e5, // 0.1 DMG
 			mul:  -2,
-			res:  -200e5, // -0.2 RMG
+			res:  -200e5, // -0.2 DMG
 		},
 		{
-			name: "Multiply 0.2 RMG by -0.02",
-			amt:  200e5, // 0.2 RMG
+			name: "Multiply 0.2 DMG by -0.02",
+			amt:  200e5, // 0.2 DMG
 			mul:  -1.02,
-			res:  -204e5, // -0.204 RMG
+			res:  -204e5, // -0.204 DMG
 		},
 		{
-			name: "Multiply -0.1 RMG by 2",
-			amt:  -100e5, // -0.1 RMG
+			name: "Multiply -0.1 DMG by 2",
+			amt:  -100e5, // -0.1 DMG
 			mul:  2,
-			res:  -200e5, // -0.2 RMG
+			res:  -200e5, // -0.2 DMG
 		},
 		{
-			name: "Multiply -0.2 RMG by 0.02",
-			amt:  -200e5, // -0.2 RMG
+			name: "Multiply -0.2 DMG by 0.02",
+			amt:  -200e5, // -0.2 DMG
 			mul:  1.02,
-			res:  -204e5, // -0.204 RMG
+			res:  -204e5, // -0.204 DMG
 		},
 		{
-			name: "Multiply -0.1 RMG by -2",
-			amt:  -100e5, // -0.1 RMG
+			name: "Multiply -0.1 DMG by -2",
+			amt:  -100e5, // -0.1 DMG
 			mul:  -2,
-			res:  200e5, // 0.2 RMG
+			res:  200e5, // 0.2 DMG
 		},
 		{
-			name: "Multiply -0.2 RMG by -0.02",
-			amt:  -200e5, // -0.2 RMG
+			name: "Multiply -0.2 DMG by -0.02",
+			amt:  -200e5, // -0.2 DMG
 			mul:  -1.02,
-			res:  204e5, // 0.204 RMG
+			res:  204e5, // 0.204 DMG
 		},
 		{
 			name: "Round down",
@@ -264,9 +264,9 @@ func TestAmountMulF64(t *testing.T) {
 		},
 		{
 			name: "Multiply by 0.",
-			amt:  1e8, // 100 RMG
+			amt:  1e8, // 100 DMG
 			mul:  0,
-			res:  0, // 0 RMG
+			res:  0, // 0 DMG
 		},
 		{
 			name: "Multiply 1 by 0.5.",

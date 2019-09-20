@@ -37,11 +37,11 @@ import (
 )
 
 const (
-	defaultConfigFilename        = "prova.conf"
+	defaultConfigFilename        = "dmgd.conf"
 	defaultDataDirname           = "data"
 	defaultLogLevel              = "info"
 	defaultLogDirname            = "logs"
-	defaultLogFilename           = "prova.log"
+	defaultLogFilename           = "dmgd.log"
 	defaultMaxPeers              = 125
 	defaultBanDuration           = time.Hour * 24
 	defaultBanThreshold          = 100
@@ -59,14 +59,14 @@ const (
 	defaultMaxOrphanTransactions = 100
 	defaultMaxOrphanTxSize       = mempool.MaxStandardTxSize
 	defaultSigCacheMaxSize       = 100000
-	sampleConfigFilename         = "sample-prova.conf"
+	sampleConfigFilename         = "sample-dmgd.conf"
 	defaultTxIndex               = false
 	defaultAddrIndex             = false
 	defaultUseOnlySyncPeerInv    = false
 )
 
 var (
-	defaultHomeDir     = provautil.AppDataDir("prova", false)
+	defaultHomeDir     = provautil.AppDataDir("dmgd", false)
 	defaultConfigFile  = filepath.Join(defaultHomeDir, defaultConfigFilename)
 	defaultDataDir     = filepath.Join(defaultHomeDir, defaultDataDirname)
 	knownDbTypes       = database.SupportedDrivers()
@@ -99,7 +99,7 @@ type config struct {
 	AddPeers             []string      `short:"a" long:"addpeer" description:"Add a peer to connect with at startup"`
 	ConnectPeers         []string      `long:"connect" description:"Connect only to the specified peers at startup"`
 	DisableListen        bool          `long:"nolisten" description:"Disable listening for incoming connections -- NOTE: Listening is automatically disabled if the --connect or --proxy options are used without also specifying listen interfaces via --listen"`
-	Listeners            []string      `long:"listen" description:"Add an interface/port to listen for connections (default all interfaces port: 7979, testnet: 17979)"`
+	Listeners            []string      `long:"listen" description:"Add an interface/port to listen for connections (default all interfaces port: 6464, testnet: 16464)"`
 	MaxPeers             int           `long:"maxpeers" description:"Max number of inbound and outbound peers"`
 	DisableBanning       bool          `long:"nobanning" description:"Disable banning of misbehaving peers"`
 	BanDuration          time.Duration `long:"banduration" description:"How long to ban misbehaving peers.  Valid time units are {s, m, h}.  Minimum 1 second"`
@@ -139,7 +139,7 @@ type config struct {
 	DebugLevel           string        `short:"d" long:"debuglevel" description:"Logging level for all subsystems {trace, debug, info, warn, error, critical} -- You may also specify <subsystem>=<level>,<subsystem2>=<level>,... to set the log level for individual subsystems -- Use show to list available subsystems"`
 	Upnp                 bool          `long:"upnp" description:"Use UPnP to map our listening port outside of NAT"`
 	UseOnlySyncPeerInv   bool          `long:"useonlysyncpeerinv" description:"Use only sync peer inv messages to reduce orphan fetching"`
-	MinRelayTxFee        float64       `long:"minrelaytxfee" description:"The minimum transaction fee in RMG/kB to be considered a non-zero fee."`
+	MinRelayTxFee        float64       `long:"minrelaytxfee" description:"The minimum transaction fee in DMG/kB to be considered a non-zero fee."`
 	FreeTxRelayLimit     float64       `long:"limitfreerelay" description:"Limit relay of transactions with no transaction fee to the given amount in thousands of bytes per minute"`
 	RelayPriority        bool          `long:"relaypriority" description:"Require free or low-fee transactions to have high priority for relaying"`
 	MaxOrphanTxs         int           `long:"maxorphantx" description:"Max number of orphan transactions to keep in memory"`
@@ -410,7 +410,7 @@ func loadConfig() (*config, []string, error) {
 		DbType:               defaultDbType,
 		RPCKey:               defaultRPCKeyFile,
 		RPCCert:              defaultRPCCertFile,
-		MinRelayTxFee:        mempool.DefaultMinRelayTxFee.ToRMG(),
+		MinRelayTxFee:        mempool.DefaultMinRelayTxFee.ToDMG(),
 		FreeTxRelayLimit:     defaultFreeTxRelayLimit,
 		BlockMinSize:         defaultBlockMinSize,
 		BlockMaxSize:         defaultBlockMaxSize,
@@ -1014,7 +1014,7 @@ func loadConfig() (*config, []string, error) {
 	return &cfg, remainingArgs, nil
 }
 
-// createDefaultConfig copies the file sample-prova.conf to the given destination path,
+// createDefaultConfig copies the file sample-dmgd.conf to the given destination path,
 // and populates it with some randomly generated RPC username and password.
 func createDefaultConfigFile(destinationPath string) error {
 	// Create the destination directory if it does not exists

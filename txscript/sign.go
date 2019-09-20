@@ -54,7 +54,7 @@ func RawTxInSignatureNew(tx *wire.MsgTx, idx int, txSigHashes *TxSigHashes, amt 
 	return append(signature.Serialize(), byte(hashType)), nil
 }
 
-// SignatureScript creates an input signature script for tx to spend RMG sent
+// SignatureScript creates an input signature script for tx to spend DMG sent
 // from a previous output to the owner of privKey. tx must include all
 // transaction inputs and outputs, however txin scripts are allowed to be filled
 // or empty. The returned script is calculated to be used as the idx'th txin

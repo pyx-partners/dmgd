@@ -202,7 +202,7 @@ func hexToBytes(s string) []byte {
 var MainNetParams = Params{
 	Name:        "mainnet",
 	Net:         wire.MainNet,
-	DefaultPort: "7979",
+	DefaultPort: "6464",
 	DNSSeeds: []DNSSeed{
 		{"mainnet.rmgchain.info", false},
 	},
@@ -437,7 +437,7 @@ var RegressionNetParams = Params{
 var TestNetParams = Params{
 	Name:        "testnet",
 	Net:         wire.TestNet,
-	DefaultPort: "17979",
+	DefaultPort: "16464",
 	DNSSeeds: []DNSSeed{
 		{"testnet.rmgchain.info", false},
 	},

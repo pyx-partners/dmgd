@@ -200,25 +200,25 @@ func TestCheckTransactionSanity(t *testing.T) {
 	adminOpPkScript, _ := txscript.NewScriptBuilder().AddOp(txscript.OP_RETURN).
 		AddData(data).Script()
 	adminOpTxOut := wire.TxOut{
-		Value:    0, // 0 RMG
+		Value:    0, // 0 DMG
 		PkScript: adminOpPkScript,
 	}
 	// create root tx out
 	rootPkScript, _ := txscript.ProvaThreadScript(provautil.RootThread)
 	rootTxOut := wire.TxOut{
-		Value:    0, // 0 RMG
+		Value:    0, // 0 DMG
 		PkScript: rootPkScript,
 	}
 	// create provision tx out
 	provisionPkScript, _ := txscript.ProvaThreadScript(provautil.ProvisionThread)
 	provisionTxOut := wire.TxOut{
-		Value:    0, // 0 RMG
+		Value:    0, // 0 DMG
 		PkScript: provisionPkScript,
 	}
 	// create provision tx out
 	issuePkScript, _ := txscript.ProvaThreadScript(provautil.IssueThread)
 	issueTxOut := wire.TxOut{
-		Value:    0, // 0 RMG
+		Value:    0, // 0 DMG
 		PkScript: issuePkScript,
 	}
 
@@ -485,7 +485,7 @@ func TestCheckTransactionOutputs(t *testing.T) {
 	adminOpPkScript, _ := txscript.NewScriptBuilder().AddOp(txscript.OP_RETURN).
 		AddData(data).Script()
 	adminOpTxOut := wire.TxOut{
-		Value:    0, // 0 RMG
+		Value:    0, // 0 DMG
 		PkScript: adminOpPkScript,
 	}
 	// Create admin op to revoke provision key.
@@ -495,7 +495,7 @@ func TestCheckTransactionOutputs(t *testing.T) {
 	adminOpRevokePkScript, _ := txscript.NewScriptBuilder().AddOp(txscript.OP_RETURN).
 		AddData(data).Script()
 	adminOpRevokeTxOut := wire.TxOut{
-		Value:    0, // 0 RMG
+		Value:    0, // 0 DMG
 		PkScript: adminOpRevokePkScript,
 	}
 	// Create admin op to revoke validate key.
@@ -505,7 +505,7 @@ func TestCheckTransactionOutputs(t *testing.T) {
 	adminOpRevProvPkScript, _ := txscript.NewScriptBuilder().AddOp(txscript.OP_RETURN).
 		AddData(data).Script()
 	adminOpRevProvTxOut := wire.TxOut{
-		Value:    0, // 0 RMG
+		Value:    0, // 0 DMG
 		PkScript: adminOpRevProvPkScript,
 	}
 	// Create admin op to add keyID.
@@ -547,19 +547,19 @@ func TestCheckTransactionOutputs(t *testing.T) {
 	adminOpAspRevPkScript, _ := txscript.NewScriptBuilder().AddOp(txscript.OP_RETURN).
 		AddData(data).Script()
 	adminOpAspRevTxOut := wire.TxOut{
-		Value:    0, // 0 RMG
+		Value:    0, // 0 DMG
 		PkScript: adminOpAspRevPkScript,
 	}
 	// create root tx out
 	rootPkScript, _ := txscript.ProvaThreadScript(provautil.RootThread)
 	rootTxOut := wire.TxOut{
-		Value:    0, // 0 RMG
+		Value:    0, // 0 DMG
 		PkScript: rootPkScript,
 	}
 	// create issue tx out
 	issuePkScript, _ := txscript.ProvaThreadScript(provautil.IssueThread)
 	issueTxOut := wire.TxOut{
-		Value:    0, // 0 RMG
+		Value:    0, // 0 DMG
 		PkScript: issuePkScript,
 	}
 

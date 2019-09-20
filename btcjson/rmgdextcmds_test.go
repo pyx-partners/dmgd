@@ -16,11 +16,11 @@ import (
 	"github.com/opacey/dmgd/btcjson"
 )
 
-// TestRmgdExtCmds tests all of the prova extended commands marshal and unmarshal
+// TestDmgdExtCmds tests all of the prova extended commands marshal and unmarshal
 // into valid results include handling of optional fields being omitted in the
 // marshalled command, while optional fields with defaults have the default
 // assigned on unmarshalled commands.
-func TestRmgdExtCmds(t *testing.T) {
+func TestDmgdExtCmds(t *testing.T) {
 	t.Parallel()
 
 	testID := int(1)

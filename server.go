@@ -60,7 +60,7 @@ const (
 var (
 	// userAgentName is the user agent name and is used to help identify
 	// ourselves to other bitcoin peers.
-	userAgentName = "Prova"
+	userAgentName = "dmgd"
 
 	// userAgentVersion is the user agent version and is used to help
 	// identify ourselves to other bitcoin peers.
@@ -2159,7 +2159,7 @@ out:
 			// listen port?
 			// XXX this assumes timeout is in seconds.
 			listenPort, err := s.nat.AddPortMapping("tcp", int(lport), int(lport),
-				"Prova listen port", 20*60)
+				"Dmgd listen port", 20*60)
 			if err != nil {
 				srvrLog.Warnf("can't add UPnP port mapping: %v", err)
 			}
@@ -2197,7 +2197,7 @@ out:
 	s.wg.Done()
 }
 
-// newServer returns a new Prova server configured to listen on addr for the
+// newServer returns a new dmgd server configured to listen on addr for the
 // bitcoin network type specified by chainParams.  Use start to begin accepting
 // connections from peers.
 func newServer(listenAddrs []string, db database.DB, chainParams *chaincfg.Params) (*server, error) {

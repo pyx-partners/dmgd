@@ -7,7 +7,7 @@
 package provautil
 
 const (
-	// AtomsPerGram is the number of Atoms in one gram (1 RMG).
+	// AtomsPerGram is the number of Atoms in one gram (1 DMG).
 	AtomsPerGram = 1e6
 
 	// MaxAtoms is the maximum transaction amount allowed in Atoms.
