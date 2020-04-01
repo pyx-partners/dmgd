@@ -1,5 +1,5 @@
-Prova
-====
+DMG
+===
 
 [![Build Status](https://travis-ci.org/BitGo/prova.svg?branch=master)](https://travis-ci.org/BitGo/prova?branch=master)
 
