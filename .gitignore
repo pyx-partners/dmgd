@@ -37,3 +37,6 @@ _testmain.go
 *.exe
 
 .arc
+.vs/ProjectSettings.json
+.vs/slnx.sqlite
+.vs/VSWorkspaceState.json
