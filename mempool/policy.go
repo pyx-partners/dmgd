@@ -1,5 +1,6 @@
 // Copyright (c) 2013-2016 The btcsuite developers
 // Copyright (c) 2017 BitGo
+// Copyright (c) 2019 Tranquility Node Ltd
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
@@ -9,10 +10,10 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/bitgo/prova/blockchain"
-	"github.com/bitgo/prova/provautil"
-	"github.com/bitgo/prova/txscript"
-	"github.com/bitgo/prova/wire"
+	"github.com/pyx-partners/dmgd/blockchain"
+	"github.com/pyx-partners/dmgd/provautil"
+	"github.com/pyx-partners/dmgd/txscript"
+	"github.com/pyx-partners/dmgd/wire"
 )
 
 const (

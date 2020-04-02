@@ -1,5 +1,6 @@
 // Copyright (c) 2014 The btcsuite developers
 // Copyright (c) 2017 BitGo
+// Copyright (c) 2019 Tranquility Node Ltd
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
@@ -8,7 +9,7 @@ package base58_test
 import (
 	"fmt"
 
-	"github.com/bitgo/prova/provautil/base58"
+	"github.com/pyx-partners/dmgd/provautil/base58"
 )
 
 // This example demonstrates how to decode modified base58 encoded data.

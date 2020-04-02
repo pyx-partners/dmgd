@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"math"
 
-	"github.com/bitgo/prova/provautil"
+	"github.com/pyx-partners/dmgd/provautil"
 )
 
 func ExampleAmount() {
@@ -18,9 +18,9 @@ func ExampleAmount() {
 	a = provautil.Amount(1e5)
 	fmt.Println("100,000 Atoms:", a)
 	// Output:
-	// Zero Atoms: 0 RMG
-	// 1,000,000 Atoms: 1 RMG
-	// 100,000 Atoms: 0.1 RMG
+	// Zero Atoms: 0 DMG
+	// 1,000,000 Atoms: 1 DMG
+	// 100,000 Atoms: 0.1 DMG
 }
 
 func ExampleNewAmount() {
@@ -52,23 +52,23 @@ func ExampleNewAmount() {
 	}
 	fmt.Println(amountNaN) //Output 4
 
-	// Output: 1 RMG
-	// 0.012345 RMG
-	// 0 RMG
+	// Output: 1 DMG
+	// 0.012345 DMG
+	// 0 DMG
 	// invalid amount
 }
 
 func ExampleAmount_unitConversions() {
 	amount := provautil.Amount(444333222111)
 
-	fmt.Println("Atom to kRMG:", amount.Format(provautil.AmountKiloRMG))
-	fmt.Println("Atom to RMG:", amount)
-	fmt.Println("Atom to MilliRMG:", amount.Format(provautil.AmountMilliRMG))
+	fmt.Println("Atom to kDMG:", amount.Format(provautil.AmountKiloDMG))
+	fmt.Println("Atom to DMG:", amount)
+	fmt.Println("Atom to MilliDMG:", amount.Format(provautil.AmountMilliDMG))
 	fmt.Println("Atom to Atom:", amount.Format(provautil.AmountAtoms))
 
 	// Output:
-	// Atom to kRMG: 444.333222111 kRMG
-	// Atom to RMG: 444333.222111 RMG
-	// Atom to MilliRMG: 444333222.111 mRMG
+	// Atom to kDMG: 444.333222111 kDMG
+	// Atom to DMG: 444333.222111 DMG
+	// Atom to MilliDMG: 444333222.111 mDMG
 	// Atom to Atom: 444333222111 Atom
 }

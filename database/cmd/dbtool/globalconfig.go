@@ -1,5 +1,6 @@
 // Copyright (c) 2015-2016 The btcsuite developers
 // Copyright (c) 2017 BitGo
+// Copyright (c) 2019 Tranquility Node Ltd
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
@@ -11,14 +12,14 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/bitgo/prova/chaincfg"
-	"github.com/bitgo/prova/database"
-	_ "github.com/bitgo/prova/database/ffldb"
-	"github.com/bitgo/prova/provautil"
+	"github.com/pyx-partners/dmgd/chaincfg"
+	"github.com/pyx-partners/dmgd/database"
+	_ "github.com/pyx-partners/dmgd/database/ffldb"
+	"github.com/pyx-partners/dmgd/provautil"
 )
 
 var (
-	provaHomeDir    = provautil.AppDataDir("prova", false)
+	provaHomeDir    = provautil.AppDataDir("dmgd", false)
 	knownDbTypes    = database.SupportedDrivers()
 	activeNetParams = &chaincfg.MainNetParams
 
@@ -31,7 +32,7 @@ var (
 
 // config defines the global configuration options.
 type config struct {
-	DataDir        string `short:"b" long:"datadir" description:"Location of the Prova data directory"`
+	DataDir        string `short:"b" long:"datadir" description:"Location of the dmgd data directory"`
 	DbType         string `long:"dbtype" description:"Database backend to use for the Block Chain"`
 	TestNet        bool   `long:"testnet" description:"Use the test network"`
 	RegressionTest bool   `long:"regtest" description:"Use the regression test network"`

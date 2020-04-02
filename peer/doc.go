@@ -1,5 +1,6 @@
 // Copyright (c) 2015-2016 The btcsuite developers
 // Copyright (c) 2017 BitGo
+// Copyright (c) 2019 Tranquility Node Ltd
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
@@ -146,6 +147,6 @@ raw message bytes using a format similar to hexdump -C.
 Bitcoin Improvement Proposals
 
 This package supports all BIPS supported by the wire package.
-(https://godoc.org/github.com/bitgo/prova/wire#hdr-Bitcoin_Improvement_Proposals)
+(https://godoc.org/github.com/pyx-partners/dmgd/wire#hdr-Bitcoin_Improvement_Proposals)
 */
 package peer

@@ -1,5 +1,6 @@
 // Copyright (c) 2016 The btcsuite developers
 // Copyright (c) 2017 BitGo
+// Copyright (c) 2019 Tranquility Node Ltd
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
@@ -11,9 +12,9 @@ package indexers
 import (
 	"encoding/binary"
 
-	"github.com/bitgo/prova/blockchain"
-	"github.com/bitgo/prova/database"
-	"github.com/bitgo/prova/provautil"
+	"github.com/pyx-partners/dmgd/blockchain"
+	"github.com/pyx-partners/dmgd/database"
+	"github.com/pyx-partners/dmgd/provautil"
 )
 
 var (

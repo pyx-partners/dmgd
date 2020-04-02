@@ -1,4 +1,5 @@
-// Copyright (c) 2017 BitGo Inc.
+// Copyright (c) 2017 BitGo
+// Copyright (c) 2019 Tranquility Node Ltd Inc.
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 

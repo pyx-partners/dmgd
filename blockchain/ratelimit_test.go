@@ -4,8 +4,8 @@ import (
 	"encoding/hex"
 	"testing"
 
-	"github.com/bitgo/prova/btcec"
-	"github.com/bitgo/prova/wire"
+	"github.com/pyx-partners/dmgd/btcec"
+	"github.com/pyx-partners/dmgd/wire"
 )
 
 // TestIsGenerationShareRateLimited tests that generation is rate limited

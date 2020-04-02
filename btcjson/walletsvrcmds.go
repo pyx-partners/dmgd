@@ -1,5 +1,6 @@
 // Copyright (c) 2014 The btcsuite developers
 // Copyright (c) 2017 BitGo
+// Copyright (c) 2019 Tranquility Node Ltd
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
@@ -438,7 +439,7 @@ func NewLockUnspentCmd(unlock bool, transactions []TransactionInput) *LockUnspen
 type MoveCmd struct {
 	FromAccount string
 	ToAccount   string
-	Amount      float64 // In RMG
+	Amount      float64 // In DMG
 	MinConf     *int    `jsonrpcdefault:"1"`
 	Comment     *string
 }
@@ -462,7 +463,7 @@ func NewMoveCmd(fromAccount, toAccount string, amount float64, minConf *int, com
 type SendFromCmd struct {
 	FromAccount string
 	ToAddress   string
-	Amount      float64 // In RMG
+	Amount      float64 // In DMG
 	MinConf     *int    `jsonrpcdefault:"1"`
 	Comment     *string
 	CommentTo   *string
@@ -487,7 +488,7 @@ func NewSendFromCmd(fromAccount, toAddress string, amount float64, minConf *int,
 // SendManyCmd defines the sendmany JSON-RPC command.
 type SendManyCmd struct {
 	FromAccount string
-	Amounts     map[string]float64 `jsonrpcusage:"{\"address\":amount,...}"` // In RMG
+	Amounts     map[string]float64 `jsonrpcusage:"{\"address\":amount,...}"` // In DMG
 	MinConf     *int               `jsonrpcdefault:"1"`
 	Comment     *string
 }
@@ -545,7 +546,7 @@ func NewSetAccountCmd(address, account string) *SetAccountCmd {
 
 // SetTxFeeCmd defines the settxfee JSON-RPC command.
 type SetTxFeeCmd struct {
-	Amount float64 // In RMG
+	Amount float64 // In DMG
 }
 
 // NewSetTxFeeCmd returns a new instance which can be used to issue a settxfee

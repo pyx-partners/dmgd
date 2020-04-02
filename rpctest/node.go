@@ -1,5 +1,6 @@
 // Copyright (c) 2016 The btcsuite developers
 // Copyright (c) 2017 BitGo
+// Copyright (c) 2019 Tranquility Node Ltd
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
@@ -16,9 +17,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/bitgo/prova/wire"
+	"github.com/pyx-partners/dmgd/wire"
 
-	"github.com/bitgo/prova/provautil"
+	"github.com/pyx-partners/dmgd/provautil"
 	rpc "github.com/btcsuite/btcrpcclient"
 )
 
@@ -54,7 +55,7 @@ func newConfig(prefix, certFile, keyFile string, extra []string) (*nodeConfig, e
 		extra:     extra,
 		prefix:    prefix,
 
-		exe:      "prova",
+		exe:      "dmgd",
 		endpoint: "ws",
 		certFile: certFile,
 		keyFile:  keyFile,

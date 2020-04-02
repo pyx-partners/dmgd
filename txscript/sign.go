@@ -1,5 +1,6 @@
 // Copyright (c) 2013-2015 The btcsuite developers
 // Copyright (c) 2017 BitGo
+// Copyright (c) 2019 Tranquility Node Ltd
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
@@ -8,10 +9,10 @@ package txscript
 import (
 	"errors"
 	"fmt"
-	"github.com/bitgo/prova/btcec"
-	"github.com/bitgo/prova/chaincfg"
-	"github.com/bitgo/prova/provautil"
-	"github.com/bitgo/prova/wire"
+	"github.com/pyx-partners/dmgd/btcec"
+	"github.com/pyx-partners/dmgd/chaincfg"
+	"github.com/pyx-partners/dmgd/provautil"
+	"github.com/pyx-partners/dmgd/wire"
 	"sort"
 )
 
@@ -53,7 +54,7 @@ func RawTxInSignatureNew(tx *wire.MsgTx, idx int, txSigHashes *TxSigHashes, amt 
 	return append(signature.Serialize(), byte(hashType)), nil
 }
 
-// SignatureScript creates an input signature script for tx to spend RMG sent
+// SignatureScript creates an input signature script for tx to spend DMG sent
 // from a previous output to the owner of privKey. tx must include all
 // transaction inputs and outputs, however txin scripts are allowed to be filled
 // or empty. The returned script is calculated to be used as the idx'th txin

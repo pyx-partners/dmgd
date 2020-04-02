@@ -25,8 +25,8 @@
 //          "fmt"
 //          "log"
 //
-//          "github.com/bitgo/prova/provautil"
-//          "github.com/bitgo/prova/chaincfg"
+//          "github.com/pyx-partners/dmgd/provautil"
+//          "github.com/pyx-partners/dmgd/chaincfg"
 //  )
 //
 //  var testnet = flag.Bool("testnet", false, "operate on the testnet Bitcoin network")

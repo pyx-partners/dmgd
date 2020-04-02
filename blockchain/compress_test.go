@@ -1,5 +1,6 @@
 // Copyright (c) 2015-2016 The btcsuite developers
 // Copyright (c) 2017 BitGo
+// Copyright (c) 2019 Tranquility Node Ltd
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
@@ -280,7 +281,7 @@ func TestAmountCompression(t *testing.T) {
 		compressed   uint64
 	}{
 		{
-			name:         "0 RMG (sometimes used in nulldata)",
+			name:         "0 DMG (sometimes used in nulldata)",
 			uncompressed: 0,
 			compressed:   0,
 		},
@@ -290,37 +291,37 @@ func TestAmountCompression(t *testing.T) {
 			compressed:   4911,
 		},
 		{
-			name:         "0.001 RMG (typical transaction fee)",
+			name:         "0.001 DMG (typical transaction fee)",
 			uncompressed: 1000,
 			compressed:   4,
 		},
 		{
-			name:         "0.01 RMG (typical transaction fee)",
+			name:         "0.01 DMG (typical transaction fee)",
 			uncompressed: 10000,
 			compressed:   5,
 		},
 		{
-			name:         "12.345678 RMG",
+			name:         "12.345678 DMG",
 			uncompressed: 12345678,
 			compressed:   111111101,
 		},
 		{
-			name:         "50 RMG",
+			name:         "50 DMG",
 			uncompressed: 50000000,
 			compressed:   48,
 		},
 		{
-			name:         "100 RMG",
+			name:         "100 DMG",
 			uncompressed: 100000000,
 			compressed:   9,
 		},
 		{
-			name:         "500 RMG",
+			name:         "500 DMG",
 			uncompressed: 500000000,
 			compressed:   49,
 		},
 		{
-			name:         "2100000000 RMG (max minted coins)",
+			name:         "2100000000 DMG (max minted coins)",
 			uncompressed: 2100000000000000,
 			compressed:   21000000,
 		},
@@ -362,7 +363,7 @@ func TestCompressedTxOut(t *testing.T) {
 		compressed   []byte
 	}{
 		{
-			name:         "nulldata with 0 RMG",
+			name:         "nulldata with 0 DMG",
 			amount:       0,
 			compAmount:   0,
 			pkScript:     hexToBytes("6a200102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f20"),
@@ -380,7 +381,7 @@ func TestCompressedTxOut(t *testing.T) {
 			compressed:   hexToBytes("a52f001018853670f9f3b0582c5b9ee8ce93764ac32b93"),
 		},
 		{
-			name:         "pay-to-pubkey uncompressed 1 RMG",
+			name:         "pay-to-pubkey uncompressed 1 DMG",
 			amount:       100000000,
 			compAmount:   9,
 			pkScript:     hexToBytes("4104192d74d0cb94344c9569c2e77901573d8d7903c3ebec3a957724895dca52c6b40d45264838c0bd96852662ce6a847b197376830160c6d2eb5e6a4c44d33f453eac"),

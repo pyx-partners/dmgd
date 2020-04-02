@@ -1,5 +1,6 @@
 // Copyright (c) 2014-2016 The btcsuite developers
 // Copyright (c) 2017 BitGo
+// Copyright (c) 2019 Tranquility Node Ltd
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
@@ -8,8 +9,8 @@ package chaincfg
 import (
 	"time"
 
-	"github.com/bitgo/prova/chaincfg/chainhash"
-	"github.com/bitgo/prova/wire"
+	"github.com/pyx-partners/dmgd/chaincfg/chainhash"
+	"github.com/pyx-partners/dmgd/wire"
 )
 
 // genesisCoinbaseTx is the coinbase transaction for the genesis blocks for

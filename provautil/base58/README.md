@@ -4,8 +4,8 @@ base58
 [![Build Status](http://img.shields.io/travis/bitgo/prova/provautil.svg)]
 (https://travis-ci.org/bitgo/prova/provautil) [![ISC License]
 (http://img.shields.io/badge/license-ISC-blue.svg)](http://copyfree.org)
-[![GoDoc](https://godoc.org/github.com/bitgo/prova/provautil/base58?status.png)]
-(http://godoc.org/github.com/bitgo/prova/provautil/base58)
+[![GoDoc](https://godoc.org/github.com/pyx-partners/dmgd/provautil/base58?status.png)]
+(http://godoc.org/github.com/pyx-partners/dmgd/provautil/base58)
 
 Package base58 provides an API for encoding and decoding to and from the
 modified base58 encoding.  It also provides an API to do Base58Check encoding,
@@ -16,22 +16,22 @@ A comprehensive suite of tests is provided to ensure proper functionality.
 ## Installation and Updating
 
 ```bash
-$ go get -u github.com/bitgo/prova/provautil/base58
+$ go get -u github.com/pyx-partners/dmgd/provautil/base58
 ```
 
 ## Examples
 
 * [Decode Example]
-  (http://godoc.org/github.com/bitgo/prova/provautil/base58#example-Decode)
+  (http://godoc.org/github.com/pyx-partners/dmgd/provautil/base58#example-Decode)
   Demonstrates how to decode modified base58 encoded data.
 * [Encode Example]
-  (http://godoc.org/github.com/bitgo/prova/provautil/base58#example-Encode)
+  (http://godoc.org/github.com/pyx-partners/dmgd/provautil/base58#example-Encode)
   Demonstrates how to encode data using the modified base58 encoding scheme.
 * [CheckDecode Example]
-  (http://godoc.org/github.com/bitgo/prova/provautil/base58#example-CheckDecode)
+  (http://godoc.org/github.com/pyx-partners/dmgd/provautil/base58#example-CheckDecode)
   Demonstrates how to decode Base58Check encoded data.
 * [CheckEncode Example]
-  (http://godoc.org/github.com/bitgo/prova/provautil/base58#example-CheckEncode)
+  (http://godoc.org/github.com/pyx-partners/dmgd/provautil/base58#example-CheckEncode)
   Demonstrates how to encode data using the Base58Check encoding scheme.
 
 ## License

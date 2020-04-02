@@ -1,5 +1,6 @@
 // Copyright (c) 2013-2017 The btcsuite developers
 // Copyright (c) 2017 BitGo
+// Copyright (c) 2019 Tranquility Node Ltd
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
@@ -9,8 +10,8 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/bitgo/prova/btcec"
-	"github.com/bitgo/prova/wire"
+	"github.com/pyx-partners/dmgd/btcec"
+	"github.com/pyx-partners/dmgd/wire"
 )
 
 // ScriptFlags is a bitmask defining additional operations or tests that will be

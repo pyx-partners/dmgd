@@ -10,7 +10,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/bitgo/prova/btcjson"
+	"github.com/pyx-partners/dmgd/btcjson"
 )
 
 const (

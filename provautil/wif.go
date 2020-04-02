@@ -1,5 +1,6 @@
 // Copyright (c) 2013-2016 The btcsuite developers
 // Copyright (c) 2017 BitGo
+// Copyright (c) 2019 Tranquility Node Ltd
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
@@ -9,10 +10,10 @@ import (
 	"bytes"
 	"errors"
 
-	"github.com/bitgo/prova/btcec"
-	"github.com/bitgo/prova/chaincfg"
-	"github.com/bitgo/prova/chaincfg/chainhash"
-	"github.com/bitgo/prova/provautil/base58"
+	"github.com/pyx-partners/dmgd/btcec"
+	"github.com/pyx-partners/dmgd/chaincfg"
+	"github.com/pyx-partners/dmgd/chaincfg/chainhash"
+	"github.com/pyx-partners/dmgd/provautil/base58"
 )
 
 // ErrMalformedPrivateKey describes an error where a WIF-encoded private

@@ -1,5 +1,6 @@
 // Copyright (c) 2014-2017 The btcsuite developers
 // Copyright (c) 2017 BitGo
+// Copyright (c) 2019 Tranquility Node Ltd
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
@@ -55,14 +56,14 @@ type TransactionInput struct {
 // CreateRawTransactionCmd defines the createrawtransaction JSON-RPC command.
 type CreateRawTransactionCmd struct {
 	Inputs   []TransactionInput
-	Amounts  map[string]float64 `jsonrpcusage:"{\"address\":amount,...}"` // In RMG
+	Amounts  map[string]float64 `jsonrpcusage:"{\"address\":amount,...}"` // In DMG
 	LockTime *int64
 }
 
 // NewCreateRawTransactionCmd returns a new instance which can be used to issue
 // a createrawtransaction JSON-RPC command.
 //
-// Amounts are in RMG.
+// Amounts are in DMG.
 func NewCreateRawTransactionCmd(inputs []TransactionInput, amounts map[string]float64,
 	lockTime *int64) *CreateRawTransactionCmd {
 

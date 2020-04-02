@@ -1,5 +1,6 @@
 // Copyright (c) 2014 The btcsuite developers
 // Copyright (c) 2017 BitGo
+// Copyright (c) 2019 Tranquility Node Ltd
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
@@ -12,14 +13,14 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/bitgo/prova/btcjson"
+	"github.com/pyx-partners/dmgd/btcjson"
 )
 
-// TestRmgdExtCmds tests all of the prova extended commands marshal and unmarshal
+// TestDmgdExtCmds tests all of the prova extended commands marshal and unmarshal
 // into valid results include handling of optional fields being omitted in the
 // marshalled command, while optional fields with defaults have the default
 // assigned on unmarshalled commands.
-func TestRmgdExtCmds(t *testing.T) {
+func TestDmgdExtCmds(t *testing.T) {
 	t.Parallel()
 
 	testID := int(1)

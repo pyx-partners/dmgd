@@ -1,6 +1,7 @@
 // Copyright (c) 2013-2017 The btcsuite developers
 // Copyright (c) 2015-2017 The Decred developers
 // Copyright (c) 2017 BitGo
+// Copyright (c) 2019 Tranquility Node Ltd
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
@@ -21,21 +22,21 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/bitgo/prova/addrmgr"
-	"github.com/bitgo/prova/blockchain"
-	"github.com/bitgo/prova/blockchain/indexers"
-	"github.com/bitgo/prova/chaincfg"
-	"github.com/bitgo/prova/chaincfg/chainhash"
-	"github.com/bitgo/prova/connmgr"
-	"github.com/bitgo/prova/database"
-	"github.com/bitgo/prova/mempool"
-	"github.com/bitgo/prova/mining"
-	"github.com/bitgo/prova/mining/cpuminer"
-	"github.com/bitgo/prova/peer"
-	"github.com/bitgo/prova/provautil"
-	"github.com/bitgo/prova/provautil/bloom"
-	"github.com/bitgo/prova/txscript"
-	"github.com/bitgo/prova/wire"
+	"github.com/pyx-partners/dmgd/addrmgr"
+	"github.com/pyx-partners/dmgd/blockchain"
+	"github.com/pyx-partners/dmgd/blockchain/indexers"
+	"github.com/pyx-partners/dmgd/chaincfg"
+	"github.com/pyx-partners/dmgd/chaincfg/chainhash"
+	"github.com/pyx-partners/dmgd/connmgr"
+	"github.com/pyx-partners/dmgd/database"
+	"github.com/pyx-partners/dmgd/mempool"
+	"github.com/pyx-partners/dmgd/mining"
+	"github.com/pyx-partners/dmgd/mining/cpuminer"
+	"github.com/pyx-partners/dmgd/peer"
+	"github.com/pyx-partners/dmgd/provautil"
+	"github.com/pyx-partners/dmgd/provautil/bloom"
+	"github.com/pyx-partners/dmgd/txscript"
+	"github.com/pyx-partners/dmgd/wire"
 )
 
 const (
@@ -59,7 +60,7 @@ const (
 var (
 	// userAgentName is the user agent name and is used to help identify
 	// ourselves to other bitcoin peers.
-	userAgentName = "Prova"
+	userAgentName = "dmgd"
 
 	// userAgentVersion is the user agent version and is used to help
 	// identify ourselves to other bitcoin peers.
@@ -2158,7 +2159,7 @@ out:
 			// listen port?
 			// XXX this assumes timeout is in seconds.
 			listenPort, err := s.nat.AddPortMapping("tcp", int(lport), int(lport),
-				"Prova listen port", 20*60)
+				"Dmgd listen port", 20*60)
 			if err != nil {
 				srvrLog.Warnf("can't add UPnP port mapping: %v", err)
 			}
@@ -2196,7 +2197,7 @@ out:
 	s.wg.Done()
 }
 
-// newServer returns a new Prova server configured to listen on addr for the
+// newServer returns a new dmgd server configured to listen on addr for the
 // bitcoin network type specified by chainParams.  Use start to begin accepting
 // connections from peers.
 func newServer(listenAddrs []string, db database.DB, chainParams *chaincfg.Params) (*server, error) {

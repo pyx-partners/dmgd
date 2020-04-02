@@ -1,6 +1,7 @@
 // Copyright (c) 2013-2017 The btcsuite developers
 // Copyright (c) 2015-2017 The Decred developers
 // Copyright (c) 2017 BitGo
+// Copyright (c) 2019 Tranquility Node Ltd
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
@@ -21,13 +22,13 @@ import (
 	"sync"
 	"time"
 
-	"github.com/bitgo/prova/blockchain"
-	"github.com/bitgo/prova/btcjson"
-	"github.com/bitgo/prova/chaincfg/chainhash"
-	"github.com/bitgo/prova/database"
-	"github.com/bitgo/prova/provautil"
-	"github.com/bitgo/prova/txscript"
-	"github.com/bitgo/prova/wire"
+	"github.com/pyx-partners/dmgd/blockchain"
+	"github.com/pyx-partners/dmgd/btcjson"
+	"github.com/pyx-partners/dmgd/chaincfg/chainhash"
+	"github.com/pyx-partners/dmgd/database"
+	"github.com/pyx-partners/dmgd/provautil"
+	"github.com/pyx-partners/dmgd/txscript"
+	"github.com/pyx-partners/dmgd/wire"
 	"github.com/btcsuite/golangcrypto/ripemd160"
 	"github.com/btcsuite/websocket"
 )
@@ -755,7 +756,7 @@ func (m *wsNotificationManager) notifyForNewTx(clients map[chan struct{}]*wsClie
 		amount += txOut.Value
 	}
 
-	ntfn := btcjson.NewTxAcceptedNtfn(txHashStr, provautil.Amount(amount).ToRMG())
+	ntfn := btcjson.NewTxAcceptedNtfn(txHashStr, provautil.Amount(amount).ToDMG())
 	marshalledJSON, err := btcjson.MarshalCmd(nil, ntfn)
 	if err != nil {
 		rpcsLog.Errorf("Failed to marshal tx notification: %s", err.Error())

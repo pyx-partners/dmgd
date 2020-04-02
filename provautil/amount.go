@@ -1,5 +1,6 @@
 // Copyright (c) 2013, 2014 The btcsuite developers
 // Copyright (c) 2017 BitGo
+// Copyright (c) 2019 Tranquility Node Ltd
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
@@ -20,30 +21,30 @@ type AmountUnit int
 // These constants define various units used when describing a gram monetary
 // amount.
 const (
-	AmountMegaRMG  AmountUnit = 6
-	AmountKiloRMG  AmountUnit = 3
-	AmountRMG      AmountUnit = 0
-	AmountMilliRMG AmountUnit = -3
+	AmountMegaDMG  AmountUnit = 6
+	AmountKiloDMG  AmountUnit = 3
+	AmountDMG      AmountUnit = 0
+	AmountMilliDMG AmountUnit = -3
 	AmountAtoms    AmountUnit = -6
 )
 
 // String returns the unit as a string.  For recognized units, the SI
-// prefix is used.  For all unrecognized units, "1eN RMG" is returned, where
+// prefix is used.  For all unrecognized units, "1eN DMG" is returned, where
 // N is the AmountUnit.
 func (u AmountUnit) String() string {
 	switch u {
-	case AmountMegaRMG:
-		return "MRMG"
-	case AmountKiloRMG:
-		return "kRMG"
-	case AmountRMG:
-		return "RMG"
-	case AmountMilliRMG:
-		return "mRMG"
+	case AmountMegaDMG:
+		return "MDMG"
+	case AmountKiloDMG:
+		return "kDMG"
+	case AmountDMG:
+		return "DMG"
+	case AmountMilliDMG:
+		return "mDMG"
 	case AmountAtoms:
 		return "Atom"
 	default:
-		return "1e" + strconv.FormatInt(int64(u), 10) + " RMG"
+		return "1e" + strconv.FormatInt(int64(u), 10) + " DMG"
 	}
 }
 
@@ -67,10 +68,10 @@ func round(f float64) Amount {
 // does not check that the amount is within the total amount of grams
 // producible as f may not refer to an amount at a single moment in time.
 //
-// NewAmount is for specifically for converting RMG to Atoms.
+// NewAmount is for specifically for converting DMG to Atoms.
 // For creating a new Amount with an int64 value which denotes a quantity of
 // Atoms, do a simple type conversion from type int64 to Amount.
-// See GoDoc for example: http://godoc.org/github.com/bitgo/prova/provautil#example-Amount
+// See GoDoc for example: http://godoc.org/github.com/pyx-partners/dmgd/provautil#example-Amount
 func NewAmount(f float64) (Amount, error) {
 	// The amount is only considered invalid if it cannot be represented
 	// as an integer type.  This may happen if f is NaN or +-Infinity.
@@ -92,9 +93,9 @@ func (a Amount) ToUnit(u AmountUnit) float64 {
 	return float64(a) / math.Pow10(int(u+6))
 }
 
-// ToRMG is the equivalent of calling ToUnit with AmountRMG.
-func (a Amount) ToRMG() float64 {
-	return a.ToUnit(AmountRMG)
+// ToDMG is the equivalent of calling ToUnit with AmountDMG.
+func (a Amount) ToDMG() float64 {
+	return a.ToUnit(AmountDMG)
 }
 
 // Format formats a monetary amount counted in gram base units as a
@@ -106,9 +107,9 @@ func (a Amount) Format(u AmountUnit) string {
 	return strconv.FormatFloat(a.ToUnit(u), 'f', -int(u+6), 64) + units
 }
 
-// String is the equivalent of calling Format with AmountRMG.
+// String is the equivalent of calling Format with AmountDMG.
 func (a Amount) String() string {
-	return a.Format(AmountRMG)
+	return a.Format(AmountDMG)
 }
 
 // MulF64 multiplies an Amount by a floating point value.  While this is not

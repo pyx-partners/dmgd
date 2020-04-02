@@ -1,6 +1,6 @@
 package blockchain
 
-import "github.com/bitgo/prova/wire"
+import "github.com/pyx-partners/dmgd/wire"
 
 // IsGenerationShareRateLimited determines if block generation is rate
 // limited due to a consumption of the permitted block share.

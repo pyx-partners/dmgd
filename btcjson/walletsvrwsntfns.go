@@ -1,5 +1,6 @@
 // Copyright (c) 2014 The btcsuite developers
 // Copyright (c) 2017 BitGo
+// Copyright (c) 2019 Tranquility Node Ltd
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
@@ -29,7 +30,7 @@ const (
 // AccountBalanceNtfn defines the accountbalance JSON-RPC notification.
 type AccountBalanceNtfn struct {
 	Account   string
-	Balance   float64 // In RMG
+	Balance   float64 // In DMG
 	Confirmed bool    // Whether Balance is confirmed or unconfirmed.
 }
 

@@ -1,5 +1,6 @@
 // Copyright (c) 2013-2016 The btcsuite developers
 // Copyright (c) 2017 BitGo
+// Copyright (c) 2019 Tranquility Node Ltd
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
@@ -9,16 +10,16 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/bitgo/prova/addrmgr"
-	"github.com/bitgo/prova/blockchain"
-	"github.com/bitgo/prova/blockchain/indexers"
-	"github.com/bitgo/prova/connmgr"
-	"github.com/bitgo/prova/database"
-	"github.com/bitgo/prova/mempool"
-	"github.com/bitgo/prova/mining"
-	"github.com/bitgo/prova/mining/cpuminer"
-	"github.com/bitgo/prova/peer"
-	"github.com/bitgo/prova/txscript"
+	"github.com/pyx-partners/dmgd/addrmgr"
+	"github.com/pyx-partners/dmgd/blockchain"
+	"github.com/pyx-partners/dmgd/blockchain/indexers"
+	"github.com/pyx-partners/dmgd/connmgr"
+	"github.com/pyx-partners/dmgd/database"
+	"github.com/pyx-partners/dmgd/mempool"
+	"github.com/pyx-partners/dmgd/mining"
+	"github.com/pyx-partners/dmgd/mining/cpuminer"
+	"github.com/pyx-partners/dmgd/peer"
+	"github.com/pyx-partners/dmgd/txscript"
 	"github.com/btcsuite/btclog"
 	"github.com/btcsuite/seelog"
 )

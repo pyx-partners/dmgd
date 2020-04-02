@@ -1,5 +1,6 @@
 // Copyright (c) 2014 The btcsuite developers
 // Copyright (c) 2017 BitGo
+// Copyright (c) 2019 Tranquility Node Ltd
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
@@ -8,8 +9,8 @@ package hdkeychain_test
 import (
 	"fmt"
 
-	"github.com/bitgo/prova/chaincfg"
-	"github.com/bitgo/prova/provautil/hdkeychain"
+	"github.com/pyx-partners/dmgd/chaincfg"
+	"github.com/pyx-partners/dmgd/provautil/hdkeychain"
 )
 
 // This example demonstrates how to generate a cryptographically random seed

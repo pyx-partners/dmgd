@@ -1,25 +1,26 @@
 // Copyright (c) 2013-2017 The btcsuite developers
 // Copyright (c) 2017 BitGo
+// Copyright (c) 2019 Tranquility Node Ltd
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
 /*
-Prova is a full-node written in Go.
+Dmgd is a full-node written in Go and a derivative of Prova.
 
-The default options are sane for most users.  This means Prova will work 'out of
+The default options are sane for most users.  This means dmgd will work 'out of
 the box' for most users.  However, there are also a wide variety of flags that
 can be used to control it.
 
 The following section provides a usage overview which enumerates the flags.  An
 interesting point to note is that the long form of all of these options
 (except -C) can be specified in a configuration file that is automatically
-parsed when Prova starts up.  By default, the configuration file is located at
-~/.prova/prova.conf on POSIX-style operating systems and %LOCALAPPDATA%\Prova\prova.conf
+parsed when dmgd starts up.  By default, the configuration file is located at
+~/.dmgd/dmgd.conf on POSIX-style operating systems and %LOCALAPPDATA%\Dmgd\dmgd.conf
 on Windows.  The -C (--configfile) flag, as shown below, can be used to override
 this location.
 
 Usage:
-  prova [OPTIONS]
+  dmgd [OPTIONS]
 
 Application Options:
   -V, --version             Display version information and exit
@@ -33,7 +34,7 @@ Application Options:
                             or --proxy options are used without also specifying
                             listen interfaces via --listen
       --listen=             Add an interface/port to listen for connections
-                            (default all interfaces port: 7979, testnet: 17979)
+                            (default all interfaces port: 6464, testnet: 16464)
       --maxpeers=           Max number of inbound and outbound peers (125)
       --nobanning           Disable banning of misbehaving peers
       --banthreshold=       Maximum allowed ban score before disconnecting and
@@ -88,7 +89,7 @@ Application Options:
                             the log level for individual subsystems -- Use show
                             to list available subsystems (info)
       --upnp                Use UPnP to map our listening port outside of NAT
-      --minrelaytxfee=      The minimum transaction fee in RMG/kB to be
+      --minrelaytxfee=      The minimum transaction fee in DMG/kB to be
                             considered a non-zero fee.
       --limitfreerelay=     Limit relay of transactions with no transaction fee
                             to the given amount in thousands of bytes per

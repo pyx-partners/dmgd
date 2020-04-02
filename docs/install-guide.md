@@ -33,7 +33,7 @@ $ glide install
 $ go install
 ```
 
-When executing `go install` to install Prova, make sure that you are in the GOPATH directory (github.com/bitgo/prova) otherwise it will give you an error instructing you to install from within your GOPATH directory.
+When executing `go install` to install Prova, make sure that you are in the GOPATH directory (github.com/pyx-partners/dmgd) otherwise it will give you an error instructing you to install from within your GOPATH directory.
 
 After you install you should be able to do `go test`, `go install` and this will successfully test the top level of prova and build it into the go/bin. Because the bin path is in your PATH you should be able to do `prova -h` successfully to confirm the app has been built and is in your path.
 

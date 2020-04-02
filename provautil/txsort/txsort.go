@@ -1,5 +1,6 @@
 // Copyright (c) 2015-2016 The btcsuite developers
 // Copyright (c) 2017 BitGo
+// Copyright (c) 2019 Tranquility Node Ltd
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
@@ -12,8 +13,8 @@ import (
 	"bytes"
 	"sort"
 
-	"github.com/bitgo/prova/chaincfg/chainhash"
-	"github.com/bitgo/prova/wire"
+	"github.com/pyx-partners/dmgd/chaincfg/chainhash"
+	"github.com/pyx-partners/dmgd/wire"
 )
 
 // InPlaceSort modifies the passed transaction inputs and outputs to be sorted

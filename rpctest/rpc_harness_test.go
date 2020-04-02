@@ -1,5 +1,6 @@
 // Copyright (c) 2016 The btcsuite developers
 // Copyright (c) 2017 BitGo
+// Copyright (c) 2019 Tranquility Node Ltd
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
@@ -14,11 +15,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/bitgo/prova/chaincfg"
-	"github.com/bitgo/prova/chaincfg/chainhash"
-	"github.com/bitgo/prova/provautil"
-	"github.com/bitgo/prova/txscript"
-	"github.com/bitgo/prova/wire"
+	"github.com/pyx-partners/dmgd/chaincfg"
+	"github.com/pyx-partners/dmgd/chaincfg/chainhash"
+	"github.com/pyx-partners/dmgd/provautil"
+	"github.com/pyx-partners/dmgd/txscript"
+	"github.com/pyx-partners/dmgd/wire"
 )
 
 func testSendOutputs(r *Harness, t *testing.T) {
@@ -29,7 +30,7 @@ func testSendOutputs(r *Harness, t *testing.T) {
 			t.Fatalf("unable to get new address: %v", err)
 		}
 
-		// Next, send amt RMG to this address, spending from one of our mature
+		// Next, send amt DMG to this address, spending from one of our mature
 		// coinbase outputs.
 		addrScript, err := txscript.PayToAddrScript(addr)
 		if err != nil {
@@ -404,7 +405,7 @@ func testMemWalletReorg(r *Harness, t *testing.T) {
 	}
 	defer harness.TearDown()
 
-	// The internal wallet of this harness should now have 250 RMG.
+	// The internal wallet of this harness should now have 250 DMG.
 	expectedBalance := provautil.Amount(250 * provautil.AtomsPerGram)
 	walletBalance := harness.ConfirmedBalance()
 	if expectedBalance != walletBalance {
@@ -422,7 +423,7 @@ func testMemWalletReorg(r *Harness, t *testing.T) {
 		t.Fatalf("unable to join node on blocks: %v", err)
 	}
 
-	// The original wallet should now have a balance of 0 RMG as its entire
+	// The original wallet should now have a balance of 0 DMG as its entire
 	// chain should have been decimated in favor of the main harness'
 	// chain.
 	expectedBalance = provautil.Amount(0)
@@ -453,7 +454,7 @@ func testMemWalletLockedOutputs(r *Harness, t *testing.T) {
 		t.Fatalf("unable to create transaction: %v", err)
 	}
 
-	// The current wallet balance should now be at least 50 RMG less
+	// The current wallet balance should now be at least 50 DMG less
 	// (accounting for fees) than the period balance
 	currentBalance := r.ConfirmedBalance()
 	if !(currentBalance <= startingBalance-outputAmt) {
@@ -526,7 +527,7 @@ func TestMain(m *testing.M) {
 }
 
 func TestHarness(t *testing.T) {
-	// We should have (numMatureOutputs * 50 RMG) of mature unspendable
+	// We should have (numMatureOutputs * 50 DMG) of mature unspendable
 	// outputs.
 	expectedBalance := provautil.Amount(numMatureOutputs * 50 * provautil.AtomsPerGram)
 	harnessBalance := mainHarness.ConfirmedBalance()

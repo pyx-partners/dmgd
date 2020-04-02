@@ -1,5 +1,6 @@
 // Copyright (c) 2015-2016 The btcsuite developers
 // Copyright (c) 2017 BitGo
+// Copyright (c) 2019 Tranquility Node Ltd
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
@@ -9,8 +10,8 @@ import (
 	"crypto/rand"
 	"testing"
 
-	"github.com/bitgo/prova/btcec"
-	"github.com/bitgo/prova/chaincfg/chainhash"
+	"github.com/pyx-partners/dmgd/btcec"
+	"github.com/pyx-partners/dmgd/chaincfg/chainhash"
 )
 
 // genRandomSig returns a random message, a signature of the message under the

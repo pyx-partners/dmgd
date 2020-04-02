@@ -1,5 +1,6 @@
 // Copyright (c) 2015-2016 The btcsuite developers
 // Copyright (c) 2017 BitGo
+// Copyright (c) 2019 Tranquility Node Ltd
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
@@ -13,10 +14,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/bitgo/prova/chaincfg/chainhash"
-	"github.com/bitgo/prova/database"
-	"github.com/bitgo/prova/provautil"
-	"github.com/bitgo/prova/wire"
+	"github.com/pyx-partners/dmgd/chaincfg/chainhash"
+	"github.com/pyx-partners/dmgd/database"
+	"github.com/pyx-partners/dmgd/provautil"
+	"github.com/pyx-partners/dmgd/wire"
 )
 
 // importCmd defines the configuration options for the insecureimport command.

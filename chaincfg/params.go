@@ -1,6 +1,7 @@
 // Copyright (c) 2014-2016 The btcsuite developers
 // Copyright (c) 2016 The Zcash developers
 // Copyright (c) 2017 BitGo
+// Copyright (c) 2019 Tranquility Node Ltd
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
@@ -9,9 +10,9 @@ package chaincfg
 import (
 	"encoding/hex"
 	"errors"
-	"github.com/bitgo/prova/btcec"
-	"github.com/bitgo/prova/chaincfg/chainhash"
-	"github.com/bitgo/prova/wire"
+	"github.com/pyx-partners/dmgd/btcec"
+	"github.com/pyx-partners/dmgd/chaincfg/chainhash"
+	"github.com/pyx-partners/dmgd/wire"
 	"math"
 	"math/big"
 	"time"
@@ -201,7 +202,7 @@ func hexToBytes(s string) []byte {
 var MainNetParams = Params{
 	Name:        "mainnet",
 	Net:         wire.MainNet,
-	DefaultPort: "7979",
+	DefaultPort: "6464",
 	DNSSeeds: []DNSSeed{
 		{"mainnet.rmgchain.info", false},
 	},
@@ -436,7 +437,7 @@ var RegressionNetParams = Params{
 var TestNetParams = Params{
 	Name:        "testnet",
 	Net:         wire.TestNet,
-	DefaultPort: "17979",
+	DefaultPort: "16464",
 	DNSSeeds: []DNSSeed{
 		{"testnet.rmgchain.info", false},
 	},

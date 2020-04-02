@@ -1,5 +1,6 @@
 // Copyright (c) 2013-2016 The btcsuite developers
 // Copyright (c) 2017 BitGo
+// Copyright (c) 2019 Tranquility Node Ltd
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
@@ -14,13 +15,13 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/bitgo/prova/blockchain"
-	"github.com/bitgo/prova/chaincfg"
-	"github.com/bitgo/prova/chaincfg/chainhash"
-	"github.com/bitgo/prova/database"
-	_ "github.com/bitgo/prova/database/ffldb"
-	"github.com/bitgo/prova/txscript"
-	"github.com/bitgo/prova/wire"
+	"github.com/pyx-partners/dmgd/blockchain"
+	"github.com/pyx-partners/dmgd/chaincfg"
+	"github.com/pyx-partners/dmgd/chaincfg/chainhash"
+	"github.com/pyx-partners/dmgd/database"
+	_ "github.com/pyx-partners/dmgd/database/ffldb"
+	"github.com/pyx-partners/dmgd/txscript"
+	"github.com/pyx-partners/dmgd/wire"
 )
 
 const (

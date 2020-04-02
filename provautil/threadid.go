@@ -5,7 +5,7 @@
 package provautil
 
 import (
-	"github.com/bitgo/prova/wire"
+	"github.com/pyx-partners/dmgd/wire"
 )
 
 const RootThread = ThreadID(0)

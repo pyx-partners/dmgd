@@ -1,5 +1,6 @@
 // Copyright (c) 2013-2015 The btcsuite developers
 // Copyright (c) 2017 BitGo
+// Copyright (c) 2019 Tranquility Node Ltd
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
@@ -15,8 +16,8 @@ import (
 	"strings"
 	"syscall"
 
-	"github.com/bitgo/prova/btcjson"
-	"github.com/bitgo/prova/provautil"
+	"github.com/pyx-partners/dmgd/btcjson"
+	"github.com/pyx-partners/dmgd/provautil"
 	flags "github.com/btcsuite/go-flags"
 	"golang.org/x/crypto/ssh/terminal"
 )
@@ -29,10 +30,10 @@ const (
 )
 
 var (
-	provaHomeDir          = provautil.AppDataDir("prova", false)
-	provactlHomeDir       = provautil.AppDataDir("provactl", false)
+	provaHomeDir          = provautil.AppDataDir("dmgd", false)
+	provactlHomeDir       = provautil.AppDataDir("dmgdctl", false)
 	btcwalletHomeDir      = provautil.AppDataDir("btcwallet", false)
-	defaultConfigFile     = filepath.Join(provactlHomeDir, "provactl.conf")
+	defaultConfigFile     = filepath.Join(provactlHomeDir, "dmgdctl.conf")
 	defaultRPCServer      = "localhost"
 	defaultRPCCertFile    = filepath.Join(provaHomeDir, "rpc.cert")
 	defaultWalletCertFile = filepath.Join(btcwalletHomeDir, "rpc.cert")
@@ -91,7 +92,7 @@ func listCommands() {
 	}
 }
 
-// config defines the configuration options for provactl.
+// config defines the configuration options for dmgdctl.
 //
 // See loadConfig for details on the configuration load process.
 type config struct {
@@ -308,8 +309,8 @@ func createDefaultConfigFile(destinationPath string) error {
 	// Create the destination directory if it does not exists
 	os.MkdirAll(filepath.Dir(destinationPath), 0700)
 
-	// Read prova.conf from its default path
-	provaConfigPath := filepath.Join(provaHomeDir, "prova.conf")
+	// Read dmgd.conf from its default path
+	provaConfigPath := filepath.Join(provaHomeDir, "dmgd.conf")
 	provaConfigFile, err := os.Open(provaConfigPath)
 	if err != nil {
 		return err

@@ -1,5 +1,6 @@
 // Copyright (c) 2013-2016 The btcsuite developers
 // Copyright (c) 2017 BitGo
+// Copyright (c) 2019 Tranquility Node Ltd
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
@@ -8,13 +9,13 @@ package blockchain_test
 import (
 	"bytes"
 	"encoding/hex"
-	"github.com/bitgo/prova/blockchain"
-	"github.com/bitgo/prova/btcec"
-	"github.com/bitgo/prova/chaincfg"
-	"github.com/bitgo/prova/chaincfg/chainhash"
-	"github.com/bitgo/prova/provautil"
-	"github.com/bitgo/prova/txscript"
-	"github.com/bitgo/prova/wire"
+	"github.com/pyx-partners/dmgd/blockchain"
+	"github.com/pyx-partners/dmgd/btcec"
+	"github.com/pyx-partners/dmgd/chaincfg"
+	"github.com/pyx-partners/dmgd/chaincfg/chainhash"
+	"github.com/pyx-partners/dmgd/provautil"
+	"github.com/pyx-partners/dmgd/txscript"
+	"github.com/pyx-partners/dmgd/wire"
 	"testing"
 	"time"
 )
@@ -199,25 +200,25 @@ func TestCheckTransactionSanity(t *testing.T) {
 	adminOpPkScript, _ := txscript.NewScriptBuilder().AddOp(txscript.OP_RETURN).
 		AddData(data).Script()
 	adminOpTxOut := wire.TxOut{
-		Value:    0, // 0 RMG
+		Value:    0, // 0 DMG
 		PkScript: adminOpPkScript,
 	}
 	// create root tx out
 	rootPkScript, _ := txscript.ProvaThreadScript(provautil.RootThread)
 	rootTxOut := wire.TxOut{
-		Value:    0, // 0 RMG
+		Value:    0, // 0 DMG
 		PkScript: rootPkScript,
 	}
 	// create provision tx out
 	provisionPkScript, _ := txscript.ProvaThreadScript(provautil.ProvisionThread)
 	provisionTxOut := wire.TxOut{
-		Value:    0, // 0 RMG
+		Value:    0, // 0 DMG
 		PkScript: provisionPkScript,
 	}
 	// create provision tx out
 	issuePkScript, _ := txscript.ProvaThreadScript(provautil.IssueThread)
 	issueTxOut := wire.TxOut{
-		Value:    0, // 0 RMG
+		Value:    0, // 0 DMG
 		PkScript: issuePkScript,
 	}
 
@@ -484,7 +485,7 @@ func TestCheckTransactionOutputs(t *testing.T) {
 	adminOpPkScript, _ := txscript.NewScriptBuilder().AddOp(txscript.OP_RETURN).
 		AddData(data).Script()
 	adminOpTxOut := wire.TxOut{
-		Value:    0, // 0 RMG
+		Value:    0, // 0 DMG
 		PkScript: adminOpPkScript,
 	}
 	// Create admin op to revoke provision key.
@@ -494,7 +495,7 @@ func TestCheckTransactionOutputs(t *testing.T) {
 	adminOpRevokePkScript, _ := txscript.NewScriptBuilder().AddOp(txscript.OP_RETURN).
 		AddData(data).Script()
 	adminOpRevokeTxOut := wire.TxOut{
-		Value:    0, // 0 RMG
+		Value:    0, // 0 DMG
 		PkScript: adminOpRevokePkScript,
 	}
 	// Create admin op to revoke validate key.
@@ -504,7 +505,7 @@ func TestCheckTransactionOutputs(t *testing.T) {
 	adminOpRevProvPkScript, _ := txscript.NewScriptBuilder().AddOp(txscript.OP_RETURN).
 		AddData(data).Script()
 	adminOpRevProvTxOut := wire.TxOut{
-		Value:    0, // 0 RMG
+		Value:    0, // 0 DMG
 		PkScript: adminOpRevProvPkScript,
 	}
 	// Create admin op to add keyID.
@@ -546,19 +547,19 @@ func TestCheckTransactionOutputs(t *testing.T) {
 	adminOpAspRevPkScript, _ := txscript.NewScriptBuilder().AddOp(txscript.OP_RETURN).
 		AddData(data).Script()
 	adminOpAspRevTxOut := wire.TxOut{
-		Value:    0, // 0 RMG
+		Value:    0, // 0 DMG
 		PkScript: adminOpAspRevPkScript,
 	}
 	// create root tx out
 	rootPkScript, _ := txscript.ProvaThreadScript(provautil.RootThread)
 	rootTxOut := wire.TxOut{
-		Value:    0, // 0 RMG
+		Value:    0, // 0 DMG
 		PkScript: rootPkScript,
 	}
 	// create issue tx out
 	issuePkScript, _ := txscript.ProvaThreadScript(provautil.IssueThread)
 	issueTxOut := wire.TxOut{
-		Value:    0, // 0 RMG
+		Value:    0, // 0 DMG
 		PkScript: issuePkScript,
 	}
 
