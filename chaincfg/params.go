@@ -204,7 +204,7 @@ var MainNetParams = Params{
 	Net:         wire.MainNet,
 	DefaultPort: "6464",
 	DNSSeeds: []DNSSeed{
-		{"mainnet.rmgchain.info", false},
+		{"mainnet.digitalmint.gold", false},
 	},
 
 	// Chain parameters
@@ -439,7 +439,7 @@ var TestNetParams = Params{
 	Net:         wire.TestNet,
 	DefaultPort: "16464",
 	DNSSeeds: []DNSSeed{
-		{"testnet.rmgchain.info", false},
+		{"testnet.digitalmint.gold", false},
 	},
 
 	// Chain parameters
