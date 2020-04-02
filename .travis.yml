@@ -1,7 +1,6 @@
 language: go
 go:
-  - 1.8.x
-  - 1.9.x
+  - 1.13.x
 sudo: false
 
 script:
@@ -10,10 +9,7 @@ script:
   - export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
   
 install:
-  - git clone https://github.com/pyx-partners/dmgd $GOPATH/src/github.com/pyx-partners/dmgd
   - cd $GOPATH/src/github.com/pyx-partners/dmgd
-  - go get -u github.com/Masterminds/glide
-  - glide install
-  - go install . ./cmd/...
+  - GO111MODULE=on go install . ./cmd/...
   - cd $GOPATH/src/github.com/pyx-partners/dmgd/blockchain
-  - go test -v
+  - go test -v -vet off

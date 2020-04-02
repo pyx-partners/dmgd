@@ -1,15 +1,15 @@
 DMG
 ===
 
-[![Build Status](https://travis-ci.org/BitGo/prova.svg?branch=master)](https://travis-ci.org/BitGo/prova?branch=master)
+[![Build Status](https://travis-ci.org/pyx-partners/dmgd.svg?branch=master)](https://travis-ci.org/pyx-partners/dmgd.svg?branch=master)
 
-Prova is a distributed consensus system for digital asset tokens written in Go (golang).
-Prova was built to support RMG, a digitized form of gold introduced by [The Royal Mint](http://www.royalmint.com/rmg)
+DMG is a distributed consensus system for digital asset tokens written in Go (golang).
+DMG was built to support RMG, a digitized form of gold introduced by [The Royal Mint](http://www.royalmint.com/rmg)
 and CME Group.  Features include:
 
  * Asset Issuance
 
-   Prova is a simple, single asset blockchain with asset issuance rather than mining.
+   DMG is a simple, single asset blockchain with asset issuance rather than mining.
 
  * Multi-signature only
 
@@ -21,13 +21,13 @@ and CME Group.  Features include:
 
  * Permissioned Participants
 
-   Prova can enforce only authorized validators and accounts.
+   DMG can enforce only authorized validators and accounts.
 
  * Trusted Technology
 
-   Prova is based on mature blockchain technologies.
+   DMG is based on mature blockchain technologies.
 
-   The implementation is derived from [btcd](https://github.com/btcsuite/btcd).
+   The implementation is derived from [Prova](https://github.com/BitGo/prova) and [btcd](https://github.com/btcsuite/btcd).
 
 It downloads, validates, and serves a block chain using consensus rules for block acceptance.  It includes a full block validation testing framework.
 
@@ -36,11 +36,11 @@ relays individual transactions that have not yet made it into a block.  It
 ensures all individual transactions admitted to the pool follow the rules
 required by the block chain.
 
-Prova does *NOT* include wallet functionality.  This means you can't actually make or receive payments directly with Prova.  That functionality is provided by Prova wallet implementations.
+DMG does *NOT* include wallet functionality.  This means you can't actually make or receive payments directly with DMG.  That functionality is provided by DMG wallet implementations.
 
 ## Requirements
 
-[Go](http://golang.org) 1.6 or newer.
+[Go](http://golang.org) 1.13 or newer.
 
 ## Installation
 
@@ -71,17 +71,15 @@ recommended that `GOPATH` is set to a directory in your home directory such as
 `~/go` to avoid write permission issues.  It is also recommended to add
 `$GOPATH/bin` to your `PATH` at this point.
 
-- Run the following commands to obtain prova, all dependencies, and install it:
+- Run the following commands to obtain DMG, all dependencies, and install it:
 
 ```bash
-$ go get -u github.com/Masterminds/glide
 $ git clone https://github.com/pyx-partners/dmgd $GOPATH/src/github.com/pyx-partners/dmgd
 $ cd $GOPATH/src/github.com/pyx-partners/dmgd
-$ glide install
 $ go install . ./cmd/...
 ```
 
-- Prova (and utilities) will now be installed in ```$GOPATH/bin```.  If you did
+- DMG (and utilities) will now be installed in ```$GOPATH/bin```.  If you did
   not already add the bin directory to your system path during Go installation,
   we recommend you do so now.
 
@@ -89,24 +87,24 @@ $ go install . ./cmd/...
 
 #### Linux/BSD/MacOSX/POSIX - Build from Source
 
-- Run the following commands to update Prova, all dependencies, and install it:
+- Run the following commands to update DMG, all dependencies, and install it:
 
 ```bash
 $ cd $GOPATH/src/github.com/pyx-partners/dmgd
-$ git pull && glide install
-$ go install . ./cmd/...
+$ git pull
+$ GO111MODULE=on go install . ./cmd/...
 ```
 
 ## Getting Started
 
-Prova has several configuration options avilable to tweak how it runs, but all
+DMG has several configuration options avilable to tweak how it runs, but all
 of the basic operations described in the intro section work with zero
 configuration.
 
 #### Linux/BSD/POSIX/Source
 
 ```bash
-$ ./prova
+$ ./dmgd
 ```
 
 ## Issues
@@ -114,7 +112,7 @@ $ ./prova
 The [integrated github issue tracker](https://github.com/pyx-partners/dmgd/issues)
 is used for this project.
 
-When reporting security issues, responsible disclosure is encouraged. The Prova developers at BitGo should be directly contacted at security@bitgo.com
+When reporting security issues, responsible disclosure is encouraged. The DMG developers at Pyx-Partners should be directly contacted at security@pyxpartners.com
 
 ## Documentation
 
@@ -122,4 +120,4 @@ The documentation is a work-in-progress.  It is located in the [docs](https://gi
 
 ## License
 
-Prova is licensed under the [copyfree](http://copyfree.org) ISC License.
+DMG is licensed under the [copyfree](http://copyfree.org) ISC License.
