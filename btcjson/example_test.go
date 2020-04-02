@@ -10,7 +10,7 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/opacey/dmgd/btcjson"
+	"github.com/pyx-partners/dmgd/btcjson"
 )
 
 // This example demonstrates how to create and marshal a command into a JSON-RPC

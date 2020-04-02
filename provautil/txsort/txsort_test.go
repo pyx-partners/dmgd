@@ -13,8 +13,8 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/opacey/dmgd/provautil/txsort"
-	"github.com/opacey/dmgd/wire"
+	"github.com/pyx-partners/dmgd/provautil/txsort"
+	"github.com/pyx-partners/dmgd/wire"
 )
 
 // TestSort ensures the transaction sorting works according to the BIP.

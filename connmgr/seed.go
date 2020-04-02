@@ -11,8 +11,8 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/opacey/dmgd/chaincfg"
-	"github.com/opacey/dmgd/wire"
+	"github.com/pyx-partners/dmgd/chaincfg"
+	"github.com/pyx-partners/dmgd/wire"
 )
 
 const (

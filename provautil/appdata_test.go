@@ -14,7 +14,7 @@ import (
 	"testing"
 	"unicode"
 
-	"github.com/opacey/dmgd/provautil"
+	"github.com/pyx-partners/dmgd/provautil"
 )
 
 // TestAppDataDir tests the API for AppDataDir to ensure it gives expected

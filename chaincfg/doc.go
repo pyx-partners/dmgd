@@ -25,8 +25,8 @@
 //          "fmt"
 //          "log"
 //
-//          "github.com/opacey/dmgd/provautil"
-//          "github.com/opacey/dmgd/chaincfg"
+//          "github.com/pyx-partners/dmgd/provautil"
+//          "github.com/pyx-partners/dmgd/chaincfg"
 //  )
 //
 //  var testnet = flag.Bool("testnet", false, "operate on the testnet Bitcoin network")

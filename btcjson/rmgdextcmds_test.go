@@ -13,7 +13,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/opacey/dmgd/btcjson"
+	"github.com/pyx-partners/dmgd/btcjson"
 )
 
 // TestDmgdExtCmds tests all of the prova extended commands marshal and unmarshal

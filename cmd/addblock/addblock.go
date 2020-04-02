@@ -11,10 +11,10 @@ import (
 	"path/filepath"
 	"runtime"
 
-	"github.com/opacey/dmgd/blockchain"
-	"github.com/opacey/dmgd/blockchain/indexers"
-	"github.com/opacey/dmgd/database"
-	"github.com/opacey/dmgd/limits"
+	"github.com/pyx-partners/dmgd/blockchain"
+	"github.com/pyx-partners/dmgd/blockchain/indexers"
+	"github.com/pyx-partners/dmgd/database"
+	"github.com/pyx-partners/dmgd/limits"
 	"github.com/btcsuite/btclog"
 )
 

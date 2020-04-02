@@ -11,8 +11,8 @@ import (
 	"runtime"
 	"testing"
 
-	"github.com/opacey/dmgd/blockchain"
-	"github.com/opacey/dmgd/txscript"
+	"github.com/pyx-partners/dmgd/blockchain"
+	"github.com/pyx-partners/dmgd/txscript"
 )
 
 // TestCheckBlockScripts ensures that validating the all of the scripts in a

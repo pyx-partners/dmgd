@@ -11,7 +11,7 @@ import (
 	"sort"
 	"testing"
 
-	"github.com/opacey/dmgd/blockchain"
+	"github.com/pyx-partners/dmgd/blockchain"
 )
 
 // TestTimeSorter tests the timeSorter implementation.

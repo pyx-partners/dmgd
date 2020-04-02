@@ -9,7 +9,7 @@ package bloom_test
 import (
 	"testing"
 
-	"github.com/opacey/dmgd/provautil/bloom"
+	"github.com/pyx-partners/dmgd/provautil/bloom"
 )
 
 // TestMurmurHash3 ensure the MurmurHash3 function produces the correct hash

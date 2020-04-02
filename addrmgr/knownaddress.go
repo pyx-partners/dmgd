@@ -9,7 +9,7 @@ package addrmgr
 import (
 	"time"
 
-	"github.com/opacey/dmgd/wire"
+	"github.com/pyx-partners/dmgd/wire"
 )
 
 // KnownAddress tracks information about a known network address that is used

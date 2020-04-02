@@ -9,8 +9,8 @@ package hdkeychain_test
 import (
 	"fmt"
 
-	"github.com/opacey/dmgd/chaincfg"
-	"github.com/opacey/dmgd/provautil/hdkeychain"
+	"github.com/pyx-partners/dmgd/chaincfg"
+	"github.com/pyx-partners/dmgd/provautil/hdkeychain"
 )
 
 // This example demonstrates how to generate a cryptographically random seed

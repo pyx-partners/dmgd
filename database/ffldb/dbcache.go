@@ -12,7 +12,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/opacey/dmgd/database/internal/treap"
+	"github.com/pyx-partners/dmgd/database/internal/treap"
 	"github.com/btcsuite/goleveldb/leveldb"
 	"github.com/btcsuite/goleveldb/leveldb/iterator"
 	"github.com/btcsuite/goleveldb/leveldb/util"

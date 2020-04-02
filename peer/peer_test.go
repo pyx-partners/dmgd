@@ -14,10 +14,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/opacey/dmgd/chaincfg"
-	"github.com/opacey/dmgd/chaincfg/chainhash"
-	"github.com/opacey/dmgd/peer"
-	"github.com/opacey/dmgd/wire"
+	"github.com/pyx-partners/dmgd/chaincfg"
+	"github.com/pyx-partners/dmgd/chaincfg/chainhash"
+	"github.com/pyx-partners/dmgd/peer"
+	"github.com/pyx-partners/dmgd/wire"
 	"github.com/btcsuite/go-socks/socks"
 )
 

@@ -10,8 +10,8 @@ import (
 	"crypto/rand"
 	"testing"
 
-	"github.com/opacey/dmgd/btcec"
-	"github.com/opacey/dmgd/chaincfg/chainhash"
+	"github.com/pyx-partners/dmgd/btcec"
+	"github.com/pyx-partners/dmgd/chaincfg/chainhash"
 )
 
 // genRandomSig returns a random message, a signature of the message under the

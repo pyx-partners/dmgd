@@ -9,8 +9,8 @@ package txscript
 import (
 	"sync"
 
-	"github.com/opacey/dmgd/btcec"
-	"github.com/opacey/dmgd/chaincfg/chainhash"
+	"github.com/pyx-partners/dmgd/btcec"
+	"github.com/pyx-partners/dmgd/chaincfg/chainhash"
 )
 
 // sigCacheEntry represents an entry in the SigCache. Entries within the

@@ -10,8 +10,8 @@
 package database
 
 import (
-	"github.com/opacey/dmgd/chaincfg/chainhash"
-	"github.com/opacey/dmgd/provautil"
+	"github.com/pyx-partners/dmgd/chaincfg/chainhash"
+	"github.com/pyx-partners/dmgd/provautil"
 )
 
 // Cursor represents a cursor over key/value pairs and nested buckets of a

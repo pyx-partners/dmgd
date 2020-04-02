@@ -13,7 +13,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/opacey/dmgd/btcjson"
+	"github.com/pyx-partners/dmgd/btcjson"
 )
 
 // TestBtcdExtCmds tests all of the btcd extended commands marshal and unmarshal

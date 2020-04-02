@@ -10,8 +10,8 @@ import (
 	"bytes"
 	"io"
 
-	"github.com/opacey/dmgd/chaincfg/chainhash"
-	"github.com/opacey/dmgd/wire"
+	"github.com/pyx-partners/dmgd/chaincfg/chainhash"
+	"github.com/pyx-partners/dmgd/wire"
 )
 
 // TxIndexUnknown is the value returned for a transaction index that is unknown.

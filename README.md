@@ -75,8 +75,8 @@ recommended that `GOPATH` is set to a directory in your home directory such as
 
 ```bash
 $ go get -u github.com/Masterminds/glide
-$ git clone https://github.com/opacey/dmgd $GOPATH/src/github.com/opacey/dmgd
-$ cd $GOPATH/src/github.com/opacey/dmgd
+$ git clone https://github.com/pyx-partners/dmgd $GOPATH/src/github.com/pyx-partners/dmgd
+$ cd $GOPATH/src/github.com/pyx-partners/dmgd
 $ glide install
 $ go install . ./cmd/...
 ```
@@ -92,7 +92,7 @@ $ go install . ./cmd/...
 - Run the following commands to update Prova, all dependencies, and install it:
 
 ```bash
-$ cd $GOPATH/src/github.com/opacey/dmgd
+$ cd $GOPATH/src/github.com/pyx-partners/dmgd
 $ git pull && glide install
 $ go install . ./cmd/...
 ```
@@ -111,14 +111,14 @@ $ ./prova
 
 ## Issues
 
-The [integrated github issue tracker](https://github.com/opacey/dmgd/issues)
+The [integrated github issue tracker](https://github.com/pyx-partners/dmgd/issues)
 is used for this project.
 
 When reporting security issues, responsible disclosure is encouraged. The Prova developers at BitGo should be directly contacted at security@bitgo.com
 
 ## Documentation
 
-The documentation is a work-in-progress.  It is located in the [docs](https://github.com/opacey/dmgd/tree/master/docs) folder.
+The documentation is a work-in-progress.  It is located in the [docs](https://github.com/pyx-partners/dmgd/tree/master/docs) folder.
 
 ## License
 

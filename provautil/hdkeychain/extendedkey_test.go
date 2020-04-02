@@ -17,8 +17,8 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/opacey/dmgd/chaincfg"
-	"github.com/opacey/dmgd/provautil/hdkeychain"
+	"github.com/pyx-partners/dmgd/chaincfg"
+	"github.com/pyx-partners/dmgd/provautil/hdkeychain"
 )
 
 // TestBIP0032Vectors tests the vectors provided by [BIP32] to ensure the

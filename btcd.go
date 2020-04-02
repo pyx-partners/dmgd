@@ -16,8 +16,8 @@ import (
 	"runtime/debug"
 	"runtime/pprof"
 
-	"github.com/opacey/dmgd/blockchain/indexers"
-	"github.com/opacey/dmgd/limits"
+	"github.com/pyx-partners/dmgd/blockchain/indexers"
+	"github.com/pyx-partners/dmgd/limits"
 )
 
 var (

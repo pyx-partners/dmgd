@@ -18,8 +18,8 @@ import (
 	"encoding/hex"
 	"testing"
 
-	"github.com/opacey/dmgd/provautil"
-	"github.com/opacey/dmgd/wire"
+	"github.com/pyx-partners/dmgd/provautil"
+	"github.com/pyx-partners/dmgd/wire"
 )
 
 // TstHasCanoncialPushes makes the internal isCanonicalPush function available

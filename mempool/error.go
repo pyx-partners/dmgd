@@ -7,8 +7,8 @@
 package mempool
 
 import (
-	"github.com/opacey/dmgd/blockchain"
-	"github.com/opacey/dmgd/wire"
+	"github.com/pyx-partners/dmgd/blockchain"
+	"github.com/pyx-partners/dmgd/wire"
 )
 
 // RuleError identifies a rule violation.  It is used to indicate that

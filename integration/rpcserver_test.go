@@ -16,8 +16,8 @@ import (
 	"runtime/debug"
 	"testing"
 
-	"github.com/opacey/dmgd/chaincfg"
-	"github.com/opacey/dmgd/rpctest"
+	"github.com/pyx-partners/dmgd/chaincfg"
+	"github.com/pyx-partners/dmgd/rpctest"
 )
 
 func testGetBestBlock(r *rpctest.Harness, t *testing.T) {

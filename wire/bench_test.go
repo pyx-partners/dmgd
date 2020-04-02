@@ -15,7 +15,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/opacey/dmgd/chaincfg/chainhash"
+	"github.com/pyx-partners/dmgd/chaincfg/chainhash"
 )
 
 // genesisCoinbaseTx is the coinbase transaction for the genesis blocks for

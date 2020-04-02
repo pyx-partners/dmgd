@@ -12,11 +12,11 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/opacey/dmgd/blockchain"
-	"github.com/opacey/dmgd/chaincfg"
-	"github.com/opacey/dmgd/database"
-	_ "github.com/opacey/dmgd/database/ffldb"
-	"github.com/opacey/dmgd/provautil"
+	"github.com/pyx-partners/dmgd/blockchain"
+	"github.com/pyx-partners/dmgd/chaincfg"
+	"github.com/pyx-partners/dmgd/database"
+	_ "github.com/pyx-partners/dmgd/database/ffldb"
+	"github.com/pyx-partners/dmgd/provautil"
 )
 
 // This example demonstrates how to create a new chain instance and use

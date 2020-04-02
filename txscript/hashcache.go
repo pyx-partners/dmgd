@@ -9,8 +9,8 @@ package txscript
 import (
 	"sync"
 
-	"github.com/opacey/dmgd/chaincfg/chainhash"
-	"github.com/opacey/dmgd/wire"
+	"github.com/pyx-partners/dmgd/chaincfg/chainhash"
+	"github.com/pyx-partners/dmgd/wire"
 )
 
 // TxSigHashes houses the partial set of sighashes introduced within BIP0143.

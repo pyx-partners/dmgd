@@ -13,7 +13,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/opacey/dmgd/btcjson"
+	"github.com/pyx-partners/dmgd/btcjson"
 )
 
 // helpDescsEnUS defines the English descriptions used for the help strings.

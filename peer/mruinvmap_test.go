@@ -11,8 +11,8 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/opacey/dmgd/chaincfg/chainhash"
-	"github.com/opacey/dmgd/wire"
+	"github.com/pyx-partners/dmgd/chaincfg/chainhash"
+	"github.com/pyx-partners/dmgd/wire"
 )
 
 // TestMruInventoryMap ensures the MruInventoryMap behaves as expected including

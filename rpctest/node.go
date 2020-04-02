@@ -17,9 +17,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/opacey/dmgd/wire"
+	"github.com/pyx-partners/dmgd/wire"
 
-	"github.com/opacey/dmgd/provautil"
+	"github.com/pyx-partners/dmgd/provautil"
 	rpc "github.com/btcsuite/btcrpcclient"
 )
 

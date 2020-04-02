@@ -10,8 +10,8 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/opacey/dmgd/btcec"
-	"github.com/opacey/dmgd/wire"
+	"github.com/pyx-partners/dmgd/btcec"
+	"github.com/pyx-partners/dmgd/wire"
 )
 
 // ScriptFlags is a bitmask defining additional operations or tests that will be

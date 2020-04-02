@@ -8,9 +8,9 @@ package provautil_test
 
 import (
 	"fmt"
-	"github.com/opacey/dmgd/btcec"
-	"github.com/opacey/dmgd/chaincfg"
-	"github.com/opacey/dmgd/provautil"
+	"github.com/pyx-partners/dmgd/btcec"
+	"github.com/pyx-partners/dmgd/chaincfg"
+	"github.com/pyx-partners/dmgd/provautil"
 	"github.com/btcsuite/golangcrypto/ripemd160"
 	"testing"
 )

@@ -10,8 +10,8 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/opacey/dmgd/database"
-	_ "github.com/opacey/dmgd/database/ffldb"
+	"github.com/pyx-partners/dmgd/database"
+	_ "github.com/pyx-partners/dmgd/database/ffldb"
 )
 
 var (

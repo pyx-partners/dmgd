@@ -11,8 +11,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/opacey/dmgd/addrmgr"
-	"github.com/opacey/dmgd/wire"
+	"github.com/pyx-partners/dmgd/addrmgr"
+	"github.com/pyx-partners/dmgd/wire"
 )
 
 func TestChance(t *testing.T) {

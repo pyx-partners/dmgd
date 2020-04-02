@@ -13,7 +13,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/opacey/dmgd/provautil"
+	"github.com/pyx-partners/dmgd/provautil"
 	//"github.com/davecgh/go-spew/spew"
 )
 

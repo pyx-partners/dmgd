@@ -11,7 +11,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/opacey/dmgd/blockchain"
+	"github.com/pyx-partners/dmgd/blockchain"
 )
 
 // TestMedianTime tests the medianTime implementation.

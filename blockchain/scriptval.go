@@ -8,9 +8,9 @@ package blockchain
 
 import (
 	"fmt"
-	"github.com/opacey/dmgd/provautil"
-	"github.com/opacey/dmgd/txscript"
-	"github.com/opacey/dmgd/wire"
+	"github.com/pyx-partners/dmgd/provautil"
+	"github.com/pyx-partners/dmgd/txscript"
+	"github.com/pyx-partners/dmgd/wire"
 	"math"
 	"runtime"
 )

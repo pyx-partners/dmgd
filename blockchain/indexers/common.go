@@ -12,9 +12,9 @@ package indexers
 import (
 	"encoding/binary"
 
-	"github.com/opacey/dmgd/blockchain"
-	"github.com/opacey/dmgd/database"
-	"github.com/opacey/dmgd/provautil"
+	"github.com/pyx-partners/dmgd/blockchain"
+	"github.com/pyx-partners/dmgd/database"
+	"github.com/pyx-partners/dmgd/provautil"
 )
 
 var (

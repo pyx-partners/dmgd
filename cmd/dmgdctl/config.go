@@ -16,8 +16,8 @@ import (
 	"strings"
 	"syscall"
 
-	"github.com/opacey/dmgd/btcjson"
-	"github.com/opacey/dmgd/provautil"
+	"github.com/pyx-partners/dmgd/btcjson"
+	"github.com/pyx-partners/dmgd/provautil"
 	flags "github.com/btcsuite/go-flags"
 	"golang.org/x/crypto/ssh/terminal"
 )

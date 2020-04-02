@@ -19,7 +19,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/opacey/dmgd/btcec"
+	"github.com/pyx-partners/dmgd/btcec"
 )
 
 func main() {

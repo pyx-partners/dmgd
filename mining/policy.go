@@ -7,9 +7,9 @@
 package mining
 
 import (
-	"github.com/opacey/dmgd/blockchain"
-	"github.com/opacey/dmgd/provautil"
-	"github.com/opacey/dmgd/wire"
+	"github.com/pyx-partners/dmgd/blockchain"
+	"github.com/pyx-partners/dmgd/provautil"
+	"github.com/pyx-partners/dmgd/wire"
 )
 
 const (

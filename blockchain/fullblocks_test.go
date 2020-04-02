@@ -9,13 +9,13 @@ package blockchain_test
 
 import (
 	"bytes"
-	"github.com/opacey/dmgd/blockchain"
-	"github.com/opacey/dmgd/blockchain/fullblocktests"
-	"github.com/opacey/dmgd/btcec"
-	"github.com/opacey/dmgd/chaincfg"
-	"github.com/opacey/dmgd/chaincfg/chainhash"
-	"github.com/opacey/dmgd/provautil"
-	"github.com/opacey/dmgd/wire"
+	"github.com/pyx-partners/dmgd/blockchain"
+	"github.com/pyx-partners/dmgd/blockchain/fullblocktests"
+	"github.com/pyx-partners/dmgd/btcec"
+	"github.com/pyx-partners/dmgd/chaincfg"
+	"github.com/pyx-partners/dmgd/chaincfg/chainhash"
+	"github.com/pyx-partners/dmgd/provautil"
+	"github.com/pyx-partners/dmgd/wire"
 	"testing"
 )
 

@@ -11,9 +11,9 @@ import (
 	"net"
 	"time"
 
-	"github.com/opacey/dmgd/chaincfg"
-	"github.com/opacey/dmgd/peer"
-	"github.com/opacey/dmgd/wire"
+	"github.com/pyx-partners/dmgd/chaincfg"
+	"github.com/pyx-partners/dmgd/peer"
+	"github.com/pyx-partners/dmgd/wire"
 )
 
 // mockRemotePeer creates a basic inbound peer listening on the simnet port for

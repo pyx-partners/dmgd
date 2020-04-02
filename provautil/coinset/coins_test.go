@@ -12,9 +12,9 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/opacey/dmgd/chaincfg/chainhash"
-	"github.com/opacey/dmgd/provautil"
-	"github.com/opacey/dmgd/provautil/coinset"
+	"github.com/pyx-partners/dmgd/chaincfg/chainhash"
+	"github.com/pyx-partners/dmgd/provautil"
+	"github.com/pyx-partners/dmgd/provautil/coinset"
 	"github.com/btcsuite/fastsha256"
 )
 

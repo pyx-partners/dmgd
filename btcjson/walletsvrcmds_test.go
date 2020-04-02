@@ -13,7 +13,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/opacey/dmgd/btcjson"
+	"github.com/pyx-partners/dmgd/btcjson"
 )
 
 // TestWalletSvrCmds tests all of the wallet server commands marshal and

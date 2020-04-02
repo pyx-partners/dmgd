@@ -9,8 +9,8 @@ package blockchain
 import (
 	"math"
 
-	"github.com/opacey/dmgd/chaincfg/chainhash"
-	"github.com/opacey/dmgd/provautil"
+	"github.com/pyx-partners/dmgd/chaincfg/chainhash"
+	"github.com/pyx-partners/dmgd/provautil"
 )
 
 // nextPowerOfTwo returns the next highest power of two from a given number if

@@ -14,7 +14,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/opacey/dmgd/provautil"
+	"github.com/pyx-partners/dmgd/provautil"
 	flags "github.com/btcsuite/go-flags"
 )
 

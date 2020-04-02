@@ -12,8 +12,8 @@ import (
 	"io"
 	"time"
 	// "log"
-	"github.com/opacey/dmgd/btcec"
-	"github.com/opacey/dmgd/chaincfg/chainhash"
+	"github.com/pyx-partners/dmgd/btcec"
+	"github.com/pyx-partners/dmgd/chaincfg/chainhash"
 )
 
 // BlockValidatingPubKeySize is the number of bytes for a compressed pubkey.

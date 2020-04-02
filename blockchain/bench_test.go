@@ -9,8 +9,8 @@ package blockchain_test
 import (
 	"testing"
 
-	"github.com/opacey/dmgd/blockchain"
-	"github.com/opacey/dmgd/provautil"
+	"github.com/pyx-partners/dmgd/blockchain"
+	"github.com/pyx-partners/dmgd/provautil"
 )
 
 // BenchmarkIsCoinBase performs a simple benchmark against the IsCoinBase

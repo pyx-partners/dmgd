@@ -10,8 +10,8 @@ import (
 	"net"
 	"testing"
 
-	"github.com/opacey/dmgd/addrmgr"
-	"github.com/opacey/dmgd/wire"
+	"github.com/pyx-partners/dmgd/addrmgr"
+	"github.com/pyx-partners/dmgd/wire"
 )
 
 // TestIPTypes ensures the various functions which determine the type of an IP

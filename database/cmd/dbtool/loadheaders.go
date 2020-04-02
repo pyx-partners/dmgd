@@ -9,8 +9,8 @@ package main
 import (
 	"time"
 
-	"github.com/opacey/dmgd/chaincfg/chainhash"
-	"github.com/opacey/dmgd/database"
+	"github.com/pyx-partners/dmgd/chaincfg/chainhash"
+	"github.com/pyx-partners/dmgd/database"
 )
 
 // headersCmd defines the configuration options for the loadheaders command.

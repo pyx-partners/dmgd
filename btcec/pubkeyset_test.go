@@ -9,7 +9,7 @@ package btcec_test
 import (
 	"testing"
 
-	"github.com/opacey/dmgd/btcec"
+	"github.com/pyx-partners/dmgd/btcec"
 )
 
 func TestPublicKeySetIsEqual(t *testing.T) {

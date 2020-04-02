@@ -10,7 +10,7 @@ import (
 	"fmt"
 	"net"
 
-	"github.com/opacey/dmgd/wire"
+	"github.com/pyx-partners/dmgd/wire"
 )
 
 var (

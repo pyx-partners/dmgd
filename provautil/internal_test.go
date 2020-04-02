@@ -14,8 +14,8 @@ interface. The functions are only exported while the tests are being run.
 package provautil
 
 import (
-	"github.com/opacey/dmgd/btcec"
-	"github.com/opacey/dmgd/provautil/base58"
+	"github.com/pyx-partners/dmgd/btcec"
+	"github.com/pyx-partners/dmgd/provautil/base58"
 	"github.com/btcsuite/golangcrypto/ripemd160"
 )
 

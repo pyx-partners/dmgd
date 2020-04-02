@@ -5,7 +5,7 @@ wire
 (https://travis-ci.org/bitgo/prova) [![ISC License]
 (http://img.shields.io/badge/license-ISC-blue.svg)](http://copyfree.org)
 [![GoDoc](https://img.shields.io/badge/godoc-reference-blue.svg)]
-(http://godoc.org/github.com/opacey/dmgd/wire)
+(http://godoc.org/github.com/pyx-partners/dmgd/wire)
 
 Package wire implements the Prova wire protocol.  A comprehensive suite of
 tests with 100% test coverage is provided to ensure proper functionality.
@@ -19,7 +19,7 @@ protocol level.
 ## Installation and Updating
 
 ```bash
-$ go get -u github.com/opacey/dmgd/wire
+$ go get -u github.com/pyx-partners/dmgd/wire
 ```
 
 ## Bitcoin Message Overview

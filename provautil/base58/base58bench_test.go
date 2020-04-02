@@ -10,7 +10,7 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/opacey/dmgd/provautil/base58"
+	"github.com/pyx-partners/dmgd/provautil/base58"
 )
 
 func BenchmarkBase58Encode(b *testing.B) {

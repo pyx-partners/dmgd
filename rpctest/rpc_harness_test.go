@@ -15,11 +15,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/opacey/dmgd/chaincfg"
-	"github.com/opacey/dmgd/chaincfg/chainhash"
-	"github.com/opacey/dmgd/provautil"
-	"github.com/opacey/dmgd/txscript"
-	"github.com/opacey/dmgd/wire"
+	"github.com/pyx-partners/dmgd/chaincfg"
+	"github.com/pyx-partners/dmgd/chaincfg/chainhash"
+	"github.com/pyx-partners/dmgd/provautil"
+	"github.com/pyx-partners/dmgd/txscript"
+	"github.com/pyx-partners/dmgd/wire"
 )
 
 func testSendOutputs(r *Harness, t *testing.T) {

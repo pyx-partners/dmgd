@@ -11,9 +11,9 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/opacey/dmgd/chaincfg"
-	"github.com/opacey/dmgd/database"
-	"github.com/opacey/dmgd/provautil"
+	"github.com/pyx-partners/dmgd/chaincfg"
+	"github.com/pyx-partners/dmgd/database"
+	"github.com/pyx-partners/dmgd/provautil"
 )
 
 // BenchmarkBlockHeader benchmarks how long it takes to load the mainnet genesis

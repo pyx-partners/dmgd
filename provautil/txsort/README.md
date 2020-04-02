@@ -5,7 +5,7 @@ txsort
 (https://travis-ci.org/bitgo/prova/provautil) [![ISC License]
 (http://img.shields.io/badge/license-ISC-blue.svg)](http://copyfree.org)
 [![GoDoc](http://img.shields.io/badge/godoc-reference-blue.svg)]
-(http://godoc.org/github.com/opacey/dmgd/provautil/txsort)
+(http://godoc.org/github.com/pyx-partners/dmgd/provautil/txsort)
 
 Package txsort provides the transaction sorting according to [BIP 69](https://github.com/bitcoin/bips/blob/master/bip-0069.mediawiki).
 
@@ -24,7 +24,7 @@ A comprehensive suite of tests is provided to ensure proper functionality.
 ## Installation and Updating
 
 ```bash
-$ go get -u github.com/opacey/dmgd/provautil/txsort
+$ go get -u github.com/pyx-partners/dmgd/provautil/txsort
 ```
 
 ## License

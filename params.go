@@ -7,7 +7,7 @@
 package main
 
 import (
-	"github.com/opacey/dmgd/chaincfg"
+	"github.com/pyx-partners/dmgd/chaincfg"
 )
 
 // activeNetParams is a pointer to the parameters specific to the

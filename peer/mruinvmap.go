@@ -12,7 +12,7 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/opacey/dmgd/wire"
+	"github.com/pyx-partners/dmgd/wire"
 )
 
 // mruInventoryMap provides a concurrency safe map that is limited to a maximum

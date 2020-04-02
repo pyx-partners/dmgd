@@ -5,7 +5,7 @@ import (
 	"reflect"
 	"testing"
 
-	. "github.com/opacey/dmgd/chaincfg"
+	. "github.com/pyx-partners/dmgd/chaincfg"
 )
 
 // Define some of the required parameters for a user-registered

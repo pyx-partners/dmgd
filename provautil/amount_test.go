@@ -10,7 +10,7 @@ import (
 	"math"
 	"testing"
 
-	. "github.com/opacey/dmgd/provautil"
+	. "github.com/pyx-partners/dmgd/provautil"
 )
 
 func TestAmountCreation(t *testing.T) {

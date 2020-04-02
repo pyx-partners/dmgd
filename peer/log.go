@@ -13,9 +13,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/opacey/dmgd/chaincfg/chainhash"
-	"github.com/opacey/dmgd/txscript"
-	"github.com/opacey/dmgd/wire"
+	"github.com/pyx-partners/dmgd/chaincfg/chainhash"
+	"github.com/pyx-partners/dmgd/txscript"
+	"github.com/pyx-partners/dmgd/wire"
 	"github.com/btcsuite/btclog"
 )
 

@@ -10,7 +10,7 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/opacey/dmgd/blockchain"
+	"github.com/pyx-partners/dmgd/blockchain"
 )
 
 func TestBigToCompact(t *testing.T) {

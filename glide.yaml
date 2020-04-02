@@ -1,4 +1,4 @@
-package: github.com/opacey/dmgd
+package: github.com/pyx-partners/dmgd
 import:
 - package: github.com/btcsuite/btclog
 - package: github.com/btcsuite/btcrpcclient

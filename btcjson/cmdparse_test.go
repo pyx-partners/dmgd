@@ -12,7 +12,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/opacey/dmgd/btcjson"
+	"github.com/pyx-partners/dmgd/btcjson"
 )
 
 // TestAssignField tests the assignField function handles supported combinations

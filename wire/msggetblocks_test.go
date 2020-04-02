@@ -12,7 +12,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/opacey/dmgd/chaincfg/chainhash"
+	"github.com/pyx-partners/dmgd/chaincfg/chainhash"
 	"github.com/davecgh/go-spew/spew"
 )
 

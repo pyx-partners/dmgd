@@ -11,7 +11,7 @@ import (
 	"encoding/hex"
 	"testing"
 
-	"github.com/opacey/dmgd/provautil/base58"
+	"github.com/pyx-partners/dmgd/provautil/base58"
 )
 
 var stringTests = []struct {

@@ -11,8 +11,8 @@ import (
 	"errors"
 	"time"
 
-	"github.com/opacey/dmgd/chaincfg/chainhash"
-	"github.com/opacey/dmgd/database"
+	"github.com/pyx-partners/dmgd/chaincfg/chainhash"
+	"github.com/pyx-partners/dmgd/database"
 )
 
 // fetchBlockCmd defines the configuration options for the fetchblock command.

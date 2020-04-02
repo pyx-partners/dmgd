@@ -14,10 +14,10 @@ import (
 	"runtime"
 	"testing"
 
-	"github.com/opacey/dmgd/chaincfg"
-	"github.com/opacey/dmgd/database"
-	"github.com/opacey/dmgd/database/ffldb"
-	"github.com/opacey/dmgd/provautil"
+	"github.com/pyx-partners/dmgd/chaincfg"
+	"github.com/pyx-partners/dmgd/database"
+	"github.com/pyx-partners/dmgd/database/ffldb"
+	"github.com/pyx-partners/dmgd/provautil"
 )
 
 // dbType is the database type name for this driver.

@@ -10,8 +10,8 @@ import (
 	"encoding/hex"
 	"fmt"
 
-	"github.com/opacey/dmgd/btcec"
-	"github.com/opacey/dmgd/chaincfg/chainhash"
+	"github.com/pyx-partners/dmgd/btcec"
+	"github.com/pyx-partners/dmgd/chaincfg/chainhash"
 )
 
 // This example demonstrates signing a message with a secp256k1 private key that

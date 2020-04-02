@@ -9,7 +9,7 @@ package addrmgr
 import (
 	"time"
 
-	"github.com/opacey/dmgd/wire"
+	"github.com/pyx-partners/dmgd/wire"
 )
 
 func TstKnownAddressIsBad(ka *KnownAddress) bool {

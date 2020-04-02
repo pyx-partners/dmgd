@@ -9,9 +9,9 @@ package blockchain_test
 import (
 	"testing"
 
-	"github.com/opacey/dmgd/blockchain"
-	"github.com/opacey/dmgd/chaincfg/chainhash"
-	"github.com/opacey/dmgd/provautil"
+	"github.com/pyx-partners/dmgd/blockchain"
+	"github.com/pyx-partners/dmgd/chaincfg/chainhash"
+	"github.com/pyx-partners/dmgd/provautil"
 )
 
 // TestMerkle tests the BuildMerkleTreeStore API.

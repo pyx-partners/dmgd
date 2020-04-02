@@ -7,8 +7,8 @@
 package blockchain
 
 import (
-	"github.com/opacey/dmgd/database"
-	"github.com/opacey/dmgd/provautil"
+	"github.com/pyx-partners/dmgd/database"
+	"github.com/pyx-partners/dmgd/provautil"
 )
 
 // maybeAcceptBlock potentially accepts a block into the block chain and, if

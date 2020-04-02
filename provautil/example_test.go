@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"math"
 
-	"github.com/opacey/dmgd/provautil"
+	"github.com/pyx-partners/dmgd/provautil"
 )
 
 func ExampleAmount() {

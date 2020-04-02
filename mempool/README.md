@@ -5,7 +5,7 @@ mempool
 (https://travis-ci.org/bitgo/prova) [![ISC License]
 (http://img.shields.io/badge/license-ISC-blue.svg)](http://copyfree.org)
 [![GoDoc](https://img.shields.io/badge/godoc-reference-blue.svg)]
-(http://godoc.org/github.com/opacey/dmgd/mempool)
+(http://godoc.org/github.com/pyx-partners/dmgd/mempool)
 
 ## Overview
 
@@ -15,7 +15,7 @@ relaying.
 ## Installation and Updating
 
 ```bash
-$ go get -u github.com/opacey/dmgd/mempool
+$ go get -u github.com/pyx-partners/dmgd/mempool
 ```
 
 ## License

@@ -11,10 +11,10 @@ import (
 	"encoding/hex"
 	"testing"
 
-	"github.com/opacey/dmgd/chaincfg/chainhash"
-	"github.com/opacey/dmgd/provautil"
-	"github.com/opacey/dmgd/provautil/bloom"
-	"github.com/opacey/dmgd/wire"
+	"github.com/pyx-partners/dmgd/chaincfg/chainhash"
+	"github.com/pyx-partners/dmgd/provautil"
+	"github.com/pyx-partners/dmgd/provautil/bloom"
+	"github.com/pyx-partners/dmgd/wire"
 )
 
 // TestFilterLarge ensures a maximum sized filter can be created.

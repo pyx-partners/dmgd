@@ -7,8 +7,8 @@
 package blockchain
 
 import (
-	"github.com/opacey/dmgd/btcec"
-	"github.com/opacey/dmgd/txscript"
+	"github.com/pyx-partners/dmgd/btcec"
+	"github.com/pyx-partners/dmgd/txscript"
 )
 
 // -----------------------------------------------------------------------------

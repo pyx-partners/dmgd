@@ -9,8 +9,8 @@ package ffldb
 import (
 	"fmt"
 
-	"github.com/opacey/dmgd/database"
-	"github.com/opacey/dmgd/wire"
+	"github.com/pyx-partners/dmgd/database"
+	"github.com/pyx-partners/dmgd/wire"
 	"github.com/btcsuite/btclog"
 )
 

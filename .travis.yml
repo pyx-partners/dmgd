@@ -10,10 +10,10 @@ script:
   - export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
   
 install:
-  - git clone https://github.com/opacey/dmgd $GOPATH/src/github.com/opacey/dmgd
-  - cd $GOPATH/src/github.com/opacey/dmgd
+  - git clone https://github.com/pyx-partners/dmgd $GOPATH/src/github.com/pyx-partners/dmgd
+  - cd $GOPATH/src/github.com/pyx-partners/dmgd
   - go get -u github.com/Masterminds/glide
   - glide install
   - go install . ./cmd/...
-  - cd $GOPATH/src/github.com/opacey/dmgd/blockchain
+  - cd $GOPATH/src/github.com/pyx-partners/dmgd/blockchain
   - go test -v

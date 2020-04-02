@@ -8,10 +8,10 @@ package blockchain
 
 import (
 	"bytes"
-	"github.com/opacey/dmgd/btcec"
-	"github.com/opacey/dmgd/provautil"
-	"github.com/opacey/dmgd/txscript"
-	"github.com/opacey/dmgd/wire"
+	"github.com/pyx-partners/dmgd/btcec"
+	"github.com/pyx-partners/dmgd/provautil"
+	"github.com/pyx-partners/dmgd/txscript"
+	"github.com/pyx-partners/dmgd/wire"
 )
 
 // KeyViewpoint represents a view into the set of admin keys from a specific

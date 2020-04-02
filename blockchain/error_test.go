@@ -9,7 +9,7 @@ package blockchain_test
 import (
 	"testing"
 
-	"github.com/opacey/dmgd/blockchain"
+	"github.com/pyx-partners/dmgd/blockchain"
 )
 
 // TestErrorCodeStringer tests the stringized output for the ErrorCode type.

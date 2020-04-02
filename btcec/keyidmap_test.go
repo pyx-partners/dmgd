@@ -9,7 +9,7 @@ package btcec_test
 import (
 	"testing"
 
-	"github.com/opacey/dmgd/btcec"
+	"github.com/pyx-partners/dmgd/btcec"
 )
 
 // TestKeyIdMapEquality tests checking equality between multiple keyIdMaps.

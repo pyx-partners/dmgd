@@ -12,7 +12,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/opacey/dmgd/database"
+	"github.com/pyx-partners/dmgd/database"
 )
 
 // TestSetLogWriter ensures the

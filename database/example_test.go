@@ -12,11 +12,11 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/opacey/dmgd/chaincfg"
-	"github.com/opacey/dmgd/database"
-	_ "github.com/opacey/dmgd/database/ffldb"
-	"github.com/opacey/dmgd/provautil"
-	"github.com/opacey/dmgd/wire"
+	"github.com/pyx-partners/dmgd/chaincfg"
+	"github.com/pyx-partners/dmgd/database"
+	_ "github.com/pyx-partners/dmgd/database/ffldb"
+	"github.com/pyx-partners/dmgd/provautil"
+	"github.com/pyx-partners/dmgd/wire"
 )
 
 // This example demonstrates creating a new database.
@@ -24,8 +24,8 @@ func ExampleCreate() {
 	// This example assumes the ffldb driver is imported.
 	//
 	// import (
-	// 	"github.com/opacey/dmgd/database"
-	// 	_ "github.com/opacey/dmgd/database/ffldb"
+	// 	"github.com/pyx-partners/dmgd/database"
+	// 	_ "github.com/pyx-partners/dmgd/database/ffldb"
 	// )
 
 	// Create a database and schedule it to be closed and removed on exit.
@@ -50,8 +50,8 @@ func Example_basicUsage() {
 	// This example assumes the ffldb driver is imported.
 	//
 	// import (
-	// 	"github.com/opacey/dmgd/database"
-	// 	_ "github.com/opacey/dmgd/database/ffldb"
+	// 	"github.com/pyx-partners/dmgd/database"
+	// 	_ "github.com/pyx-partners/dmgd/database/ffldb"
 	// )
 
 	// Create a database and schedule it to be closed and removed on exit.
@@ -116,8 +116,8 @@ func Example_blockStorageAndRetrieval() {
 	// This example assumes the ffldb driver is imported.
 	//
 	// import (
-	// 	"github.com/opacey/dmgd/database"
-	// 	_ "github.com/opacey/dmgd/database/ffldb"
+	// 	"github.com/pyx-partners/dmgd/database"
+	// 	_ "github.com/pyx-partners/dmgd/database/ffldb"
 	// )
 
 	// Create a database and schedule it to be closed and removed on exit.

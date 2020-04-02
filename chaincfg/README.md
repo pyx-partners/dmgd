@@ -5,7 +5,7 @@ chaincfg
 (https://travis-ci.org/bitgo/prova) [![ISC License]
 (http://img.shields.io/badge/license-ISC-blue.svg)](http://copyfree.org)
 [![GoDoc](https://img.shields.io/badge/godoc-reference-blue.svg)]
-(http://godoc.org/github.com/opacey/dmgd/chaincfg)
+(http://godoc.org/github.com/pyx-partners/dmgd/chaincfg)
 
 Package chaincfg defines chain configuration parameters for the three standard
 Prova networks and provides the ability for callers to define their own custom
@@ -26,8 +26,8 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/opacey/dmgd/provautil"
-	"github.com/opacey/dmgd/chaincfg"
+	"github.com/pyx-partners/dmgd/provautil"
+	"github.com/pyx-partners/dmgd/chaincfg"
 )
 
 var testnet = flag.Bool("testnet", false, "operate on the testnet Prova network")
@@ -58,7 +58,7 @@ func main() {
 ## Installation and Updating
 
 ```bash
-$ go get -u github.com/opacey/dmgd/chaincfg
+$ go get -u github.com/pyx-partners/dmgd/chaincfg
 ```
 
 ## License

@@ -11,7 +11,7 @@ import (
 	"sort"
 	"testing"
 
-	"github.com/opacey/dmgd/btcjson"
+	"github.com/pyx-partners/dmgd/btcjson"
 )
 
 // TestUsageFlagStringer tests the stringized output for the UsageFlag type.

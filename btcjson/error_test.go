@@ -9,7 +9,7 @@ package btcjson_test
 import (
 	"testing"
 
-	"github.com/opacey/dmgd/btcjson"
+	"github.com/pyx-partners/dmgd/btcjson"
 )
 
 // TestErrorCodeStringer tests the stringized output for the ErrorCode type.

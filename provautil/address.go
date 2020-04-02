@@ -11,9 +11,9 @@ import (
 	"encoding/hex"
 	"errors"
 
-	"github.com/opacey/dmgd/btcec"
-	"github.com/opacey/dmgd/chaincfg"
-	"github.com/opacey/dmgd/provautil/base58"
+	"github.com/pyx-partners/dmgd/btcec"
+	"github.com/pyx-partners/dmgd/chaincfg"
+	"github.com/pyx-partners/dmgd/provautil/base58"
 	"github.com/btcsuite/golangcrypto/ripemd160"
 )
 

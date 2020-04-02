@@ -12,7 +12,7 @@ import (
 	"io"
 	"unicode/utf8"
 
-	"github.com/opacey/dmgd/chaincfg/chainhash"
+	"github.com/pyx-partners/dmgd/chaincfg/chainhash"
 )
 
 // MessageHeaderSize is the number of bytes in a bitcoin message header.

@@ -10,7 +10,7 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/opacey/dmgd/chaincfg/chainhash"
+	"github.com/pyx-partners/dmgd/chaincfg/chainhash"
 )
 
 // RejectCode represents a numeric value by which a remote peer indicates

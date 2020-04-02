@@ -9,7 +9,7 @@ package base58_test
 import (
 	"fmt"
 
-	"github.com/opacey/dmgd/provautil/base58"
+	"github.com/pyx-partners/dmgd/provautil/base58"
 )
 
 // This example demonstrates how to decode modified base58 encoded data.

@@ -10,7 +10,7 @@ import (
 	"encoding/json"
 	"testing"
 
-	"github.com/opacey/dmgd/btcjson"
+	"github.com/pyx-partners/dmgd/btcjson"
 )
 
 // TestChainSvrCustomResults ensures any results that have custom marshalling

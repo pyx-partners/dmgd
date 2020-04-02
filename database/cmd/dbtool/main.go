@@ -12,7 +12,7 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/opacey/dmgd/database"
+	"github.com/pyx-partners/dmgd/database"
 	"github.com/btcsuite/btclog"
 	flags "github.com/btcsuite/go-flags"
 )

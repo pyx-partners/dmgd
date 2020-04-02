@@ -11,7 +11,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/opacey/dmgd/wire"
+	"github.com/pyx-partners/dmgd/wire"
 	"github.com/davecgh/go-spew/spew"
 )
 

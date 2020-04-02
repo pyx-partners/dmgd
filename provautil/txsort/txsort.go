@@ -13,8 +13,8 @@ import (
 	"bytes"
 	"sort"
 
-	"github.com/opacey/dmgd/chaincfg/chainhash"
-	"github.com/opacey/dmgd/wire"
+	"github.com/pyx-partners/dmgd/chaincfg/chainhash"
+	"github.com/pyx-partners/dmgd/wire"
 )
 
 // InPlaceSort modifies the passed transaction inputs and outputs to be sorted

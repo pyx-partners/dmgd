@@ -11,7 +11,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/opacey/dmgd/wire"
+	"github.com/pyx-partners/dmgd/wire"
 )
 
 // addrIndexBucket provides a mock address index database bucket by implementing

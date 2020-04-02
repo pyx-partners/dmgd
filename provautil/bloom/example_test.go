@@ -11,9 +11,9 @@ import (
 	"math/rand"
 	"time"
 
-	"github.com/opacey/dmgd/chaincfg/chainhash"
-	"github.com/opacey/dmgd/provautil/bloom"
-	"github.com/opacey/dmgd/wire"
+	"github.com/pyx-partners/dmgd/chaincfg/chainhash"
+	"github.com/pyx-partners/dmgd/provautil/bloom"
+	"github.com/pyx-partners/dmgd/wire"
 )
 
 // This example demonstrates how to create a new bloom filter, add a transaction

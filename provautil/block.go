@@ -11,8 +11,8 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/opacey/dmgd/chaincfg/chainhash"
-	"github.com/opacey/dmgd/wire"
+	"github.com/pyx-partners/dmgd/chaincfg/chainhash"
+	"github.com/pyx-partners/dmgd/wire"
 )
 
 // OutOfRangeError describes an error due to accessing an element that is out

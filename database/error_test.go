@@ -10,7 +10,7 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/opacey/dmgd/database"
+	"github.com/pyx-partners/dmgd/database"
 )
 
 // TestErrorCodeStringer tests the stringized output for the ErrorCode type.

@@ -11,7 +11,7 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/opacey/dmgd/chaincfg/chainhash"
+	"github.com/pyx-partners/dmgd/chaincfg/chainhash"
 )
 
 // defaultTransactionAlloc is the default size used for the backing array

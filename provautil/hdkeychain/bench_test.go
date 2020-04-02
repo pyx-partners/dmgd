@@ -9,7 +9,7 @@ package hdkeychain_test
 import (
 	"testing"
 
-	"github.com/opacey/dmgd/provautil/hdkeychain"
+	"github.com/pyx-partners/dmgd/provautil/hdkeychain"
 )
 
 // bip0032MasterPriv1 is the master private extended key from the first set of

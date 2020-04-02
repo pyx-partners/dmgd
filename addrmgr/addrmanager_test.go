@@ -14,8 +14,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/opacey/dmgd/addrmgr"
-	"github.com/opacey/dmgd/wire"
+	"github.com/pyx-partners/dmgd/addrmgr"
+	"github.com/pyx-partners/dmgd/wire"
 )
 
 // naTest is used to describe a test to be performed against the NetAddressKey

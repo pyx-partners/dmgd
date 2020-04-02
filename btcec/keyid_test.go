@@ -10,7 +10,7 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/opacey/dmgd/btcec"
+	"github.com/pyx-partners/dmgd/btcec"
 )
 
 // TestKeyIdToAddressFormat tests converting key ids to address bytes.

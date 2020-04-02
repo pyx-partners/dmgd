@@ -27,11 +27,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/opacey/dmgd/chaincfg"
-	"github.com/opacey/dmgd/chaincfg/chainhash"
-	"github.com/opacey/dmgd/database"
-	"github.com/opacey/dmgd/provautil"
-	"github.com/opacey/dmgd/wire"
+	"github.com/pyx-partners/dmgd/chaincfg"
+	"github.com/pyx-partners/dmgd/chaincfg/chainhash"
+	"github.com/pyx-partners/dmgd/database"
+	"github.com/pyx-partners/dmgd/provautil"
+	"github.com/pyx-partners/dmgd/wire"
 )
 
 var (

@@ -10,7 +10,7 @@ import (
 	"fmt"
 	"hash/crc32"
 
-	"github.com/opacey/dmgd/database"
+	"github.com/pyx-partners/dmgd/database"
 )
 
 // The serialized write cursor location format is:

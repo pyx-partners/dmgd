@@ -11,7 +11,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/opacey/dmgd/btcjson"
+	"github.com/pyx-partners/dmgd/btcjson"
 )
 
 // TestIsValidIDType ensures the IsValidIDType function behaves as expected.

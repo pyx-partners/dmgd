@@ -12,7 +12,7 @@ import (
 	"io"
 	"testing"
 
-	"github.com/opacey/dmgd/peer"
+	"github.com/pyx-partners/dmgd/peer"
 )
 
 func TestSetLogWriter(t *testing.T) {
