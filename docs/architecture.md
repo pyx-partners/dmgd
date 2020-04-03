@@ -1,13 +1,13 @@
 # Overview
 
-Prova is a decentralized digital asset platform.  It enables an issuer to
+DMG is a decentralized digital asset platform.  It enables an issuer to
 create, destroy, trade, and store digital tokens on a decentralized blockchain.
 
-Like other blockchain technology, Prova provides transparency and cryptographic
+Like other blockchain technology, DMG provides transparency and cryptographic
 proof of transactions via a decentralized and highly robust decentralized
 ledger.
 
-Prova differentiates from other blockchains in that:
+DMG differentiates from other blockchains in that:
 
 1. Assets are transparently issued on chain via administrative transactions.
 Tokens are not created as part of block creation.
@@ -18,20 +18,20 @@ holders approved by the asset issuer.
 3. Block creation is conducted by Validators that are approved by the asset
 issuer.
 
-Due to the fact that Prova does not issue tokens programmatically as part of
+Due to the fact that DMG does not issue tokens programmatically as part of
 the block creation process (like Bitcoin, Ethereum, Litecoin, ...), tokens
 are instead created by the Asset Issuer.  The Asset Issuer has permission
 to create and destroy assets via administrative transactions which are 100%
 visible on the blockchain by all participants.
 
-As a model and a technical basis for Prova, the long-running distributed 
+As a model and a technical basis for DMG, the long-running distributed 
 [Bitcoin](https://www.bitcoin.org) blockchain system is used as a basis.
-The initial implementation of prova is based on the 
+The initial implementation of DMG is based on the 
 [btcd](https://github.com/btcsuite/btcd) implementation.
 
 # Terminology
 
-Prova uses the following terms as part of its documentation:
+DMG uses the following terms as part of its documentation:
 
 **Asset Issuer**
 The Asset Issuer is responsible for asset issuance and 
@@ -44,7 +44,7 @@ optionally collect fees and are similar to *miners* in other blockchains.
 
 **Token**
 A Token is an abstract notion of a digitized asset which can be traded
-on the Prova blockchain.
+on the DMG blockchain.
 
 **Admin Transaction**
 Admin Transactions, or Administrative Transactions, are special purpose 
@@ -54,11 +54,11 @@ governance of the system.
 
 # Token Movement
 
-Prova tokens are exchanged in **Prova transactions**, which contain output 
+DMG tokens are exchanged in **DMG transactions**, which contain output 
 scripts defining a locking condition required for spending expressed as a smart 
 contract script.
 
-In Prova transactions, tokens may *only* be sent to an 
+In DMG transactions, tokens may *only* be sent to an 
 [M-of-N](https://en.wikipedia.org/wiki/Multisignature) key locked destination, 
 where the majority of keys are specifically authorized. The minority remainder 
 keys are standard public key hashes.
@@ -88,12 +88,12 @@ a shorthand for the longer public key value.
 
 # Block Validation
 
-The movement of Prova tokens is timestamped using a 
+The movement of DMG tokens is timestamped using a 
 [proof-of-work](http://hashcash.org/) blockchain, as it is in the underlying 
-model.  Every Prova node may sync the blockchain to independently verify the 
+model.  Every DMG node may sync the blockchain to independently verify the 
 ownership of tokens, and that is the standard mechanism for use.
 
-Prova alters the proof-of-work system to prevent denial-of-service or 
+DMG alters the proof-of-work system to prevent denial-of-service or 
 double-spending attacks by introducing the concept of provisioned block 
 generators with consensus limits.  Blocks must be signed with these provsioned 
 **validate keys** to be considered valid.
@@ -112,7 +112,7 @@ effective proof-of-work, or share of the blockchain.
 
 # Asset Issuance
 
-Asset tokens in Prova are not issued via coinbase rewards, instead they are 
+Asset tokens in DMG are not issued via coinbase rewards, instead they are 
 allocated via **issue transactions**.
 
 Issue transactions may only be signed by **issue keys** which are used to 

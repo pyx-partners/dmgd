@@ -2,7 +2,7 @@
 
 ## Summary
 
-The Prova blockchain is a Bitcoin-derived blockchain, custom-designed for the use case of safely digitizing and transacting a representation of an underlying physical asset, for example: gold vaulted by [The Royal Mint](http://www.royalmint.com/). Its reference implementation is based on a fork of [btcd](https://github.com/btcsuite/btcd), which is written in Go.
+The DMG blockchain is a Bitcoin-derived blockchain, custom-designed for the use case of safely digitizing and transacting a representation of an underlying physical asset, for example: gold vaulted by [The Royal Mint](http://www.royalmint.com/). Its reference implementation is based on a fork of [btcd](https://github.com/btcsuite/btcd), which is written in Go.
 
 ## Design Docs
 

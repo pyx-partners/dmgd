@@ -1,4 +1,4 @@
-# Prova Install
+# DMG Install
 
 ## Install Go
 
@@ -22,7 +22,7 @@ You should add a line to your PATH environment variable to include the GOPATH bi
 export PATH=$PATH:$GOPATH/bin
 ```
 
-## Clone Prova
+## Clone DMG
 
 Make sure you have an SSH key registered with GitHub, then create in your `GOPATH` src/ directory the path `github.com/bitgo` and navigate to this path. There may be errors along this path, see below for how to resolve.
 
@@ -33,15 +33,15 @@ $ glide install
 $ go install
 ```
 
-When executing `go install` to install Prova, make sure that you are in the GOPATH directory (github.com/pyx-partners/dmgd) otherwise it will give you an error instructing you to install from within your GOPATH directory.
+When executing `go install` to install DMG, make sure that you are in the GOPATH directory (github.com/pyx-partners/dmgd) otherwise it will give you an error instructing you to install from within your GOPATH directory.
 
 After you install you should be able to do `go test`, `go install` and this will successfully test the top level of prova and build it into the go/bin. Because the bin path is in your PATH you should be able to do `prova -h` successfully to confirm the app has been built and is in your path.
 
-## Run Prova
+## Run DMG
 
-To run Prova you will need a data directory to store the chain state. Create this directory where you like, like for testnet in your home directory you can create ~/testnet/ - in this directory make a directory like `/1/` if you want to work with multiple chain states.
+To run DMG you will need a data directory to store the chain state. Create this directory where you like, like for testnet in your home directory you can create ~/testnet/ - in this directory make a directory like `/1/` if you want to work with multiple chain states.
 
-For Prova in regtest simulating 2 nodes, create directories `~/regtest/1` and `~/regtest/2` and the following test.sh bash script can run two nodes against each other in regtest.
+For DMG in regtest simulating 2 nodes, create directories `~/regtest/1` and `~/regtest/2` and the following test.sh bash script can run two nodes against each other in regtest.
 
 ```
 #!/bin/bash
@@ -53,7 +53,7 @@ provactl -u user -P pass -s $LOCAL:7001 setvalidatekeys "[\"d36c82406d3c77ebc342
 provactl -u user -P pass -s $LOCAL:7001 generate 101
 ```
 
-For Prova in testnet mode, create a ~/testnet/1 directory, use the following command line arguments to start the testnet node and connect to the remote node.
+For DMG in testnet mode, create a ~/testnet/1 directory, use the following command line arguments to start the testnet node and connect to the remote node.
 
 ```
 prova

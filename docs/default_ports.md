@@ -1,4 +1,4 @@
-While Prova is highly configurable when it comes to the network configuration,
+While DMG is highly configurable when it comes to the network configuration,
 the following is intended to be a quick reference for the default ports used so
 port forwarding can be configured as required.
 
