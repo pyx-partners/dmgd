@@ -2,6 +2,7 @@
 // Copyright (c) 2016 The Zcash developers
 // Copyright (c) 2017 BitGo
 // Copyright (c) 2019 Tranquility Node Ltd
+// Copyright (c) 2020 Pyx Partners
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
@@ -10,12 +11,13 @@ package chaincfg
 import (
 	"encoding/hex"
 	"errors"
-	"github.com/pyx-partners/dmgd/btcec"
-	"github.com/pyx-partners/dmgd/chaincfg/chainhash"
-	"github.com/pyx-partners/dmgd/wire"
 	"math"
 	"math/big"
 	"time"
+
+	"github.com/pyx-partners/dmgd/btcec"
+	"github.com/pyx-partners/dmgd/chaincfg/chainhash"
+	"github.com/pyx-partners/dmgd/wire"
 )
 
 // These variables are the chain proof-of-work limit parameters for each default
@@ -494,6 +496,8 @@ var TestNetParams = Params{
 			"031337ef04ae0d9b7f46f11889bbb0362d8477661a8ec5fabbaf85e9beb24eef20",
 			"031337a189ad45659f2eebd521c43775e3d6c69e1c25b9b3498909e95c5d2da3b6",
 			"031337e3ab1c86cbb6d67208b273098df863d1f3080947602d894cae4bc2d19d5c",
+			// Pyx Keys
+			"02f54ba86dc1ccb5bed0224d23f01ed87e4a443c47fc690d7797a13d41d2340e1a",
 		)
 
 		return keySets
