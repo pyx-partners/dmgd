@@ -554,7 +554,7 @@ Example Return|`{`<br />&nbsp;&nbsp;`"bytes": 310768,`<br />&nbsp;&nbsp;`"size":
 <a name="DMGMethods"></a>
 ### 6. DMG Methods
 
-<a name="DMGMethodOverview">
+<a name="DMGMethodOverview"></a>
 **6.1 Method Overview**<br />
 
 The following is an overview of the RPC methods which are implemented by DMG, but not the original bitcoind or btcd clients. Click the method name for further details such as parameter and return information.
@@ -568,7 +568,7 @@ The following is an overview of the RPC methods which are implemented by DMG, bu
 <a name="DMGMethodDetails"></a>
 **6.2 Method Details**<br />
 
-<a name="getadmininfo"/>
+<a name="getadmininfo"></a>
 
 |   |   |
 |---|---|
@@ -576,7 +576,7 @@ The following is an overview of the RPC methods which are implemented by DMG, bu
 |Parameters|None|
 |Description|Get the latest admin state: unspent admin transaction outputs, net issuance, and admin keys.|
 |Returns|`{ (json object)`<br />&nbsp;`"hash": "data",  (string) the hex-encoded bytes of the best block hash`<br />&nbsp;`"height": n (numeric) the block height of the best block`<br />&nbsp;`"threadtips": [{ (array of json objects)`<br />&nbsp;&nbsp;`"id": n (numeric) the thread id`<br />&nbsp;&nbsp;`"name":  "data", (string) the thread name`<br />&nbsp;&nbsp;`"outpoint":  "txid:vout", (string) the unspent outpoint`<br />&nbsp;`}] `<br />&nbsp;`"totalsupply": n (numeric) the net value of admin issuance`<br />&nbsp;`"lastkeyid": n (numeric) the highest key id value ever provisioned`<br />&nbsp;`"rootkeys": (array of strings) the root pubKeys`<br />&nbsp;`"provisionkeys": (array of strings) the provision pubKeys`<br />&nbsp;`"issuekeys": (array of strings) the issue pubKeys`<br />&nbsp;`"validatekeys": (array of strings) the validate pubKeys`<br />&nbsp;`"aspkeys": [{ (array of json objects) `<br />&nbsp;&nbsp;`"pubkey":  "data", (string) the asp pubKey`<br />&nbsp;&nbsp;`"keyid":  n, (numeric) the ASP key id`<br />&nbsp;`}] `<br />`}`
-[Return to Overview](#ExtMethodOverview)<br />
+[Return to Overview](#DMGMethodOverview)<br />
 
 ***
 
@@ -589,7 +589,7 @@ The following is an overview of the RPC methods which are implemented by DMG, bu
 |Description|Get the transaction hashes for transactions associated with addresses. Chain height filtering is available for paging.|
 |Note|This method only returns transaction hashes present in the best chain|
 |Returns|`[ (json array of string)`<br />&nbsp;&nbsp;`"transactionhash", (string) hash of the transaction associated with address`<br />&nbsp;&nbsp;`...`<br />`]`|
-[Return to Overview](#MethodOverview)<br />
+[Return to Overview](#DMGMethodOverview)<br />
 
 ***
 
@@ -601,7 +601,7 @@ The following is an overview of the RPC methods which are implemented by DMG, bu
 |Parameters|1. validateprivkeys (array of strings, required) - The private keys to use as validate keys |
 |Description|Set the private keys to use as signing validate keys when generating new blocks.|
 |Returns|Nothing|
-[Return to Overview](#MethodOverview)<br />
+[Return to Overview](#DMGMethodOverview)<br />
 
 <a name="ExtensionMethods"></a>
 ### 6. Extension Methods
@@ -685,7 +685,7 @@ The following is an overview of the RPC methods which are implemented by btcd, b
 |Parameters|1. command (string, required) - `connect` to add a peer (defaults to temporary), `remove` to remove a persistent peer, or `disconnect` to remove all matching non-persistent peers <br /> 2. peer (string, required) - ip address and port, or ID of the peer to operate on<br /> 3. connection type (string, optional) - `perm` indicates the peer should be added as a permanent peer, `temp` indicates a connection should only be attempted once. |
 |Description|Attempts to add or remove a peer.|
 |Returns|Nothing|
-[Return to Overview](#MethodOverview)<br />
+[Return to Overview](#ExtMethodOverview)<br />
 
 ***
 
@@ -697,7 +697,7 @@ The following is an overview of the RPC methods which are implemented by btcd, b
 |Parameters|1. numblocks (int, required) - The number of blocks to generate |
 |Description|When in simnet or regtest mode, generates `numblocks` blocks. If blocks arrive from elsewhere, they are built upon but don't count toward the number of blocks to generate. Only generated blocks are returned. This RPC call will exit with an error if the server is already CPU mining, and will prevent the server from CPU mining for another command while it runs. |
 |Returns|`[ (json array of strings)` <br/>&nbsp;&nbsp; `"blockhash", ... hash of the generated block` <br/>`]` |
-[Return to Overview](#MethodOverview)<br />
+[Return to Overview](#ExtMethodOverview)<br />
 
 ***
 
@@ -710,7 +710,7 @@ The following is an overview of the RPC methods which are implemented by btcd, b
 |Description|Returns block headers starting with the first known block hash from the request.|
 |Returns|`[ (json array of strings)`<br />&nbsp;&nbsp;`"blockheader",`<br />&nbsp;&nbsp;`...`<br />`]`|
 |Example Return|`[`<br />&nbsp;&nbsp;`"0000002099417930b2ae09feda10e38b58c0f6bb44b4d60fa33f0e000000000000000000d53...",`<br />&nbsp;&nbsp;`"000000203ba25a173bfd24d09e0c76002a910b685ca297bd09a17b020000000000000000702..."`<br />`]`|
-[Return to Overview](#MethodOverview)<br />
+[Return to Overview](#ExtMethodOverview)<br />
 
 ***
 
@@ -1286,9 +1286,9 @@ func main() {
 	}
 
 	// Load the certificate for the TLS connection which is automatically
-	// generated by Prova when it starts the RPC server and doesn't already
+	// generated by DMG when it starts the RPC server and doesn't already
 	// have one.
-	provaHomeDir := provautil.AppDataDir("prova", false)
+	provaHomeDir := provautil.AppDataDir("dmgd", false)
 	certs, err := ioutil.ReadFile(filepath.Join(provaHomeDir, "rpc.cert"))
 	if err != nil {
 		log.Fatal(err)
@@ -1355,14 +1355,14 @@ var fs = require('fs');
 var WebSocket = require('ws');
 
 // Load the certificate for the TLS connection which is automatically
-// generated by Prova when it starts the RPC server and doesn't already
+// generated by DMG when it starts the RPC server and doesn't already
 // have one.
-var cert = fs.readFileSync('/path/to/prova/appdata/rpc.cert');
+var cert = fs.readFileSync('/path/to/dmgd/appdata/rpc.cert');
 var user = "yourusername";
 var password = "yourpassword";
 
 
-// Initiate the websocket connection.  The Prova generated certificate acts as
+// Initiate the websocket connection.  The DMG generated certificate acts as
 // its own certificate authority, so it needs to be specified in the 'ca' array
 // for the certificate to properly validate.
 var ws = new WebSocket('wss://127.0.0.1:8334/ws', {
