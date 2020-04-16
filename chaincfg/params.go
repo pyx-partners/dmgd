@@ -458,6 +458,12 @@ var TestNetParams = Params{
 
 			// TRM Keys
 			"0358feab3764c99a46cbe403406a473485adafb0f195aac23ab2669eff3409284f",
+
+			// Pyx Keys
+			"038ab498ba67635c5025d06fb94a912c022184a1d9aed951813f056f5ba0411130",
+			"0289841a7a5c335614296fcf8ae233be08dcf71f90f0311e1ebb40ca4bd01b1073",
+			"03e11633439ec9f0698c34dd14913e76812a771b690adfa45e3ad27964954a8220",
+			"03fceb2fe3ad2703c1859d01c3fb72523c5c93a19f732e136a375303e5fa6ef22b",
 		)
 
 		// Provision keys
@@ -468,6 +474,10 @@ var TestNetParams = Params{
 
 			// TRM Keys
 			"0321fa2bf73dcab470f7e0da5caf64b5ddd670a3833bdac5f7ed1de11a1215808f",
+
+			// Pyx keys
+			"031a14a8283cfb7d1e0f4ab6588f543f45529c80c7571f2b934527bd6c2c8efb3f",
+			"03dded09c792230c87b4a16e4edcb27156627068bf678208b26ea82bd81879ef5f",
 		)
 
 		// Root keys
