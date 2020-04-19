@@ -482,15 +482,11 @@ var TestNetParams = Params{
 
 		// Root keys
 		keySets[btcec.RootKeySet], _ = btcec.ParsePubKeySet(btcec.S256(),
-			// BitGo Keys
-			"023cc2d11d97728d6d69d1d296513e12e0439c225b612f1a24e5d3b3a333d058aa",
-			"029cd0486fd4a5b260f956e1b16db17cd0e2f8914054b30eddda17950af7033855",
-			"03ecf113dd8476ab79a64c7b8eeaf30999744777ed8b31a91387fd76b0d798d9fd",
-			"03ce7f7ee8e5e01de741649b69655f168526ebb476e1fb8f250a825f824cf7b63e",
-
-			// TRM Keys
-			"024f6663321fb4fb6e27e402402bc54205dd3b11e2d7bc8e49eb42a66e93af0b68",
-			"029e47cc0d688425e8613b80dd7385201b2b7ca9dbb98c5a196f7f95464727d6be",
+			// Pyx Keys
+			"025d22ab7b6a80032171b486ba8a72dcaef9d653080f7a625fdc9e63aba60d9f85",
+			"0392ff35e8302a926d4a85a9e30ae3865e5ebb772bf21a005fb3a6d33c022b64af",
+			"02de6e479321206ff21f5a9b7b5fc78d10f7de1ac148da7c7ccfaa0b2c34a135f9",
+			"02415747ae40bcc4e16237c98a31da75adc3f6440ebcd7a65b522bfea3466122fe",
 		)
 
 		// Validate keys
