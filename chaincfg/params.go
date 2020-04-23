@@ -519,12 +519,10 @@ var TestNetParams = Params{
 		return keySets
 	}(),
 	ASPKeyIdMap: func() btcec.KeyIdMap {
-		// BitGo Keys
-		pubKey1, _ := btcec.ParsePubKey(hexToBytes("036bcc8bc2af28edd3b1b8d25baefa0f06dd4fc243da0587268b5899d5538fc8a6"), btcec.S256())
-		pubKey3, _ := btcec.ParsePubKey(hexToBytes("021497b39f2f32eeaa1083c52ee265d0fad85338fb82bf8c0ae4a1dbe746e4a45b"), btcec.S256())
-
-		// TRM Keys
-		pubKey2, _ := btcec.ParsePubKey(hexToBytes("02cea696aa3388a06a42ede7aab3c50b7229cc98659413c65178b52a86f7499635"), btcec.S256())
+		// Pyx Keys
+		pubKey1, _ := btcec.ParsePubKey(hexToBytes("029598303b2e05ccdd493f08b016747d7d9f9e6d39a7ba01114533e43e8c7fea81"), btcec.S256())
+		pubKey3, _ := btcec.ParsePubKey(hexToBytes("02a1c86f2d0f3b27900176ce4cd361d48785ca84077f12b900ad24ec8132f0c660"), btcec.S256())
+		pubKey2, _ := btcec.ParsePubKey(hexToBytes("02954abe81c593b3cf27140497da20054799dc5cf4e8937d83edadd4f3062a5598"), btcec.S256())
 
 		return map[btcec.KeyID]*btcec.PublicKey{btcec.KeyID(1): pubKey1, btcec.KeyID(2): pubKey2, btcec.KeyID(3): pubKey3}
 	}(),
