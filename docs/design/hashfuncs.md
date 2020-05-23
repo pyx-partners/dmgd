@@ -1,6 +1,6 @@
 # Exploration of Potential Hash Functions
 
-What hash function should be used in Prova? We want a mature algorithm that is novel enough to provide resistance to existing ASICs or new dedicated hardware for a reasonable time period, which is the reason SHA256d must be replaced.
+What hash function should be used in DMG? We want a mature algorithm that is novel enough to provide resistance to existing ASICs or new dedicated hardware for a reasonable time period, which is the reason SHA256d must be replaced.
 
 Selection goals:
 
