@@ -1,4 +1,4 @@
-# Prova Operation Node Guide
+# DMG Operation Node Guide
 
 It is strongly recommended that when using DMG, best practices are followed. DMG's security tools provide for the possibility of a secure and reliable system, but these tools must be used with proper care.
 
