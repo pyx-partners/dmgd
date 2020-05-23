@@ -1,4 +1,4 @@
-# Prova Chain Design
+# DMG Chain Design
 
 ## Summary
 
