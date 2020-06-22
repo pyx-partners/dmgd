@@ -1,6 +1,6 @@
-# Prova Validate Key Share Limiter
+# DMG Validate Key Share Limiter
 
-With Prova we need a way to guarantee against a situation in which a certain validate key ever has a larger than acceptable share of blocks. We want a diverse set of validate keys to be used so that no one key is ever in a position where they can possibly exert excessive influence over the system or capture all of the transaction fees.
+With DMG we need a way to guarantee against a situation in which a certain validate key ever has a larger than acceptable share of blocks. We want a diverse set of validate keys to be used so that no one key is ever in a position where they can possibly exert excessive influence over the system or capture all of the transaction fees.
 
 ## Requirements
 

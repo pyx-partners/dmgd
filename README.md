@@ -44,6 +44,18 @@ DMG does *NOT* include wallet functionality.  This means you can't actually make
 
 ## Installation
 
+#### Run in Docker container
+
+A DMG node can be built into a Docker container and run using:
+
+```bash
+git clone https://github.com/pyx-partners/dmgd dmgd
+cd dmgd
+docker build --no-cache -t dmgd .
+docker run -d dmgd:latest
+```
+Modify the `dmgd.conf` file to configure DMG and use `-p` option to open up required ports for RPC access and peer-to-peer port access.
+
 #### Linux/BSD/MacOSX/POSIX - Build from Source
 
 - Install Go according to the installation instructions here:

@@ -1,25 +1,25 @@
-# Prova Admin Transaction Design
+# DMG Admin Transaction Design
 
-This document describes Prova extensions to update the administrative state layer of the Prova chain.
+This document describes DMG extensions to update the administrative state layer of the DMG chain.
 
 ## Design Goals
 
-Prova is a Bitcoin-derivative consensus system that includes a blockchain mechanism to provide for updates to a synchronized ledger.  The synchronized state of the Bitcoin blockchain consists of its UTXO set and other states such as hashing difficulty and block subsidy.
+DMG is a Bitcoin-derivative consensus system that includes a blockchain mechanism to provide for updates to a synchronized ledger.  The synchronized state of the Bitcoin blockchain consists of its UTXO set and other states such as hashing difficulty and block subsidy.
 
-For a permissioned block chain like the Prova chain, the set of mutable chain states Bitcoin provides for is not sufficient: Bitcoin is a permissionless system and lacks any mutable permission states beyond fund ownership.
+For a permissioned block chain like the DMG chain, the set of mutable chain states Bitcoin provides for is not sufficient: Bitcoin is a permissionless system and lacks any mutable permission states beyond fund ownership.
 
-In Prova the issuance of tokens, permissioning of block publishing, and other administrative functions need various special operations and provisioning.  To that end, the following special high level administrative keys are defined:
+In DMG the issuance of tokens, permissioning of block publishing, and other administrative functions need various special operations and provisioning.  To that end, the following special high level administrative keys are defined:
 
 - **Root:** Add and revoke provision and issue keys.
 - **Provision:** Add and revoke validate and ASP keys.
 - **Issue:** Issue and de-issue tokens.
 
-In addition, the Prova chain defines the following operational keys for permissioned operation:
+In addition, the DMG chain defines the following operational keys for permissioned operation:
 
-- **Validate:**	Publish signed updates to the ledger in the form of blocks in the Prova block chain.
+- **Validate:**	Publish signed updates to the ledger in the form of blocks in the DMG block chain.
 - **Account Service Provider (ASP):** Move funds with user participation, recovering lost funds, reassigning fund ownership without user participation.
 
-This document defines the provisioning of these keys and their related discrete administrative operations in special transactions published to the Prova block chain. The design includes the following parts:
+This document defines the provisioning of these keys and their related discrete administrative operations in special transactions published to the DMG block chain. The design includes the following parts:
 
 - The different sets of permissioned keys
 - Opcodes for admin operations
@@ -49,7 +49,7 @@ Issue keys mutate the outstanding amount of spendable tokens in the chain throug
 - **Tokens:** Issue
 - **Tokens:** De-issue
 
-When introducing new tokens to the chain, issue keys are essentially unbounded in the amounts they can introduce.  When destroying tokens, appropriate spending signatures from the standard owner of the tokens is required in addition to the issue key signatures that authenticate the de-issue operation.
+When introducing new tokens (DMG) to the chain, issue keys are essentially unbounded in the amounts they can introduce.  When destroying tokens, appropriate spending signatures from the standard owner of the tokens is required in addition to the issue key signatures that authenticate the de-issue operation.
 
 ### Provision Keys
 
@@ -64,7 +64,7 @@ A provision key is used to authorize and revoke ASP keys and validate keys. This
 
 ### Key IDs
 
-To enable shorter bare multisig style addresses, and as a defensive mechanism for potential use in future hard forks, Prova uses 4-byte key ids for ASP keys. These short IDs map back into a record on the chain of ASP public keys.
+To enable shorter bare multisig style addresses, and as a defensive mechanism for potential use in future hard forks, DMG uses 4-byte key ids for ASP keys. These short IDs map back into a record on the chain of ASP public keys.
 
 When an admin transaction adds an ASP public key to the list of authorized ASP keys, the transaction includes a 4-byte key id. The key id specified in the provisioning of a ASP key must be determined by incrementing the previous highest key id and incrementing it by one, or in the absence of a previous key id, it must be one.
 
@@ -176,8 +176,7 @@ The scriptSig authorizing the spend of a standard UTXO must be valid.  To allow 
 
 ## Indexing
 
-When a node evaluates the chain, it keeps a working set of admin keys to evaluate the validity of transactions against.  Updates to the admin keys take
-effect on the block immediately after their provisioning transaction is included.
+When a node evaluates the chain, it keeps a working set of admin keys to evaluate the validity of transactions against.  Updates to the admin keys take effect on the block immediately after their provisioning transaction is included.
 
 An interface is exposed on the set of these transactions and starting values that summarizes them into a final state: lists of public keys, one for each role / active status.
 

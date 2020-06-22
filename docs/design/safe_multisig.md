@@ -1,8 +1,8 @@
 # Safe Multi-Sig
 
-Standard Prova transactions use a new type of script & corresponding address format that provides chain-enforced safety against unauthorized fund movement, double-spends, fund loss, or un-authorized holding of funds.
+Standard DMG transactions use a new type of script & corresponding address format that provides chain-enforced safety against unauthorized fund movement, double-spends, fund loss, or un-authorized holding of funds.
 
-These transactions are styled after the original multi-sig design of Bitcoin transactions, specifically in a m-of-n signing configuration with a quorum of keys being explicitly-permissioned Account Service Provider (ASP) keys, referenced by 32-bit KeyIDs, along with a non-quorum set of public key hashes. Typically this means 2 KeyIDs and 1 key hash in a 2-of-3 configuration.
+These transactions are styled after the original multi-sig design of Bitcoin transactions, specifically in an m-of-n signing configuration with a quorum of keys being explicitly-permissioned Account Service Provider (ASP) keys, referenced by 32-bit KeyIDs, along with a non-quorum set of public key hashes. Typically, this means 2 KeyIDs and 1 key hash in a 2-of-3 configuration.
 
 Account Service Providers are businesses or organizations explicitly vetted by the chain root admin key holder. The ASP keys are provisioned and assigned to KeyIDs on the chain itself using [administrative transactions](admin.md).
 
@@ -14,7 +14,7 @@ In the original multi-sig design of Bitcoin, an OP_CHECKMULTISIG output defined 
 
 With OP_CHECKMULTISIG, as with all standard original Bitcoin outputs, public keys were the norm for specifying transaction destinations. Over time, the desire for a more convenient way to direct payments towards destinations arose and the concept of a shortened address-friendly public-key-hash output was created. Standard Bitcoin transactions now use this pay-to-public-key-hash output formulation that substitutes a 20-byte public key ripe160 sha256 public key hash for the 33-byte compressed public key.
 
-Prova transactions build on these ideas, substituting the public keys in OP_CHECKMULTISIG with shortened address-friendly identifiers of two types:
+DMG transactions build on these ideas, substituting the public keys in OP_CHECKMULTISIG with shortened address-friendly identifiers of two types:
 
 1. ASP KeyIDs: 4-byte, 32 bit unsigned int ids, saving 29 bytes in addresses vs. a pubkey
 2. Public key hashes: 20-byte hashes, saving 13 bytes
@@ -45,7 +45,7 @@ Prova transactions are much stricter in the enforcement of what consists of a va
 
 ## Address Format
 
-Standard Prova outputs in a 1 user key and 2 ASP key configuration are represented in a simple address format. Addresses are constructed using the standard base58 encoding format of the 3 identifying keys:
+Standard DMG outputs in a 1 user key and 2 ASP key configuration are represented in a simple address format. Addresses are constructed using the standard base58 encoding format of the 3 identifying keys:
 
 ```
 base58-encode(

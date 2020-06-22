@@ -8,8 +8,8 @@ chaincfg
 (http://godoc.org/github.com/pyx-partners/dmgd/chaincfg)
 
 Package chaincfg defines chain configuration parameters for the three standard
-Prova networks and provides the ability for callers to define their own custom
-Prova networks.
+DMG networks and provides the ability for callers to define their own custom
+DMG networks.
 
 Although this package was primarily written for btcd, it has intentionally been
 designed so it can be used as a standalone package for any projects needing to
@@ -30,7 +30,7 @@ import (
 	"github.com/pyx-partners/dmgd/chaincfg"
 )
 
-var testnet = flag.Bool("testnet", false, "operate on the testnet Prova network")
+var testnet = flag.Bool("testnet", false, "operate on the testnet DMG network")
 
 // By default (without -testnet), use mainnet.
 var chainParams = &chaincfg.MainNetParams

@@ -1,11 +1,11 @@
-# Standard Prova Transactions
+# Standard DMG Transactions
 
 These example transactions are provided for developers as easy reference points for testing
-valid transactions in the Prova blockchain.
+valid transactions in the DMG blockchain.
 
 ## Coinbase Transaction
 
-Prova coinbase transactions spend to standard Prova outputs.
+DMG coinbase transactions spend to standard DMG outputs.
 
 ```
 // Raw Hex:
@@ -29,7 +29,7 @@ version: 1
 
 ## Standard Transaction
 
-A standard Prova transaction looks like a send to an n-of-m output with two key ids and one public key hash. This transaction spends the above coinbase transaction.
+A standard DMG transaction looks like a send to an n-of-m output with two key ids and one public key hash. This transaction spends the above coinbase transaction.
 
 ```
 // Pseudocode:
@@ -81,7 +81,7 @@ version: 1
 
 ## Re-spend Transaction
 
-In the normal scenario, a Prova transaction would not be spending a coinbase, it would be spending the unspent outputs of a previous transaction. This transaction re-spends the above transaction.
+In the normal scenario, a DMG transaction would not be spending a coinbase, it would be spending the unspent outputs of a previous transaction. This transaction re-spends the above transaction.
 
 ```
 // Pseudocode:
