@@ -452,13 +452,6 @@ var TestNetParams = Params{
 
 		// Issue keys
 		keySets[btcec.IssueKeySet], _ = btcec.ParsePubKeySet(btcec.S256(),
-			// BitGo Keys
-			"029cd0486fd4a5b260f956e1b16db17cd0e2f8914054b30eddda17950af7033855",
-			"034d3083c7ad8537d5397fbb65aa6794e5db24d8c4ed3a1f4e12285a447c83ffc7",
-
-			// TRM Keys
-			"0358feab3764c99a46cbe403406a473485adafb0f195aac23ab2669eff3409284f",
-
 			// Pyx Keys
 			"038ab498ba67635c5025d06fb94a912c022184a1d9aed951813f056f5ba0411130",
 			"0289841a7a5c335614296fcf8ae233be08dcf71f90f0311e1ebb40ca4bd01b1073",
@@ -468,13 +461,6 @@ var TestNetParams = Params{
 
 		// Provision keys
 		keySets[btcec.ProvisionKeySet], _ = btcec.ParsePubKeySet(btcec.S256(),
-			// BitGo Keys
-			"029cd0486fd4a5b260f956e1b16db17cd0e2f8914054b30eddda17950af7033855",
-			"0307051d31f87efb84839115c09e6160cf7b9ac210860202792e1cea7bd32a7051",
-
-			// TRM Keys
-			"0321fa2bf73dcab470f7e0da5caf64b5ddd670a3833bdac5f7ed1de11a1215808f",
-
 			// Pyx keys
 			"031a14a8283cfb7d1e0f4ab6588f543f45529c80c7571f2b934527bd6c2c8efb3f",
 			"03dded09c792230c87b4a16e4edcb27156627068bf678208b26ea82bd81879ef5f",
@@ -491,17 +477,6 @@ var TestNetParams = Params{
 
 		// Validate keys
 		keySets[btcec.ValidateKeySet], _ = btcec.ParsePubKeySet(btcec.S256(),
-			"031337b4828f61541f003634ebe6c55a9cca4d13c7fec34f2698939272a76b15b0",
-			"031337e5bbe1b43b283ab56d5ceb64c159b0b5abd5ab58edd7d0ccad5360a23130",
-			"031337b35bb33a8bfa9c190f617e139efef3d307bb1a981f17fd0ea6a42010f5ae",
-			"031337eeb34fd8eb0af9e171c448a66ea632311cfe8316f7aed49b954ac6c054f7",
-			"0372d56e2288fdd17a0975baa9607d5143f4b330b801142db16405ec961dab1337",
-			"02615e88cd09e731816926cd7f16caad87b6b7ae54ef440d3ffb7d935eedab1337",
-			"03d9e4d1bccd8efae3f74ae57258dd41c3c250e8b3806e7891a0a4d07fc3ab1337",
-			"031337b1b33037ad401a189389f65bda1f9abd1497c956834c99213f0bd2d931ed",
-			"031337ef04ae0d9b7f46f11889bbb0362d8477661a8ec5fabbaf85e9beb24eef20",
-			"031337a189ad45659f2eebd521c43775e3d6c69e1c25b9b3498909e95c5d2da3b6",
-			"031337e3ab1c86cbb6d67208b273098df863d1f3080947602d894cae4bc2d19d5c",
 			// Pyx Keys
 			"02f54ba86dc1ccb5bed0224d23f01ed87e4a443c47fc690d7797a13d41d2340e1a",
 			"02bd690a99ceec5eb928c42097d10f16498598fc018e21d375f37ba724cdb04c9b",
